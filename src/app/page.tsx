@@ -4,8 +4,23 @@ import Menu from './component/menu'
 import Card from './component/card'
 
 import getTrimString from './utils/trimString'
+import { CategoryType } from './types/types'
 
 export default function Home() {
+  console.log("hi")
+
+  const getCategories = async () => {
+    const res = await fetch('https://wokpa.ddns.net/api/podcast-categories', {
+      method: 'GET'
+    })
+    const values = await res.json()
+
+    return values
+  }
+
+  const categories = getCategories()
+  console.log(categories)
+
   return (
     <div className='w-screen h-screen bg-[#212121] flex flex-nowrap'>
 
@@ -130,9 +145,15 @@ export default function Home() {
           </div>
 
         </div>
-
+  
+        {/* SECTION 2 */}
+        <div className="bg-[#30303080] rounded-lg p-2 m-2">
+          <div className='flex flex-row items-center gap-0'>
+            <img src='/section/wire.png' className='w-8' />
+            <p className='text-xs text-white font-bold'>Top Categories</p>
+          </div>
+        </div>
       </div>
-
 
     </div>
   )

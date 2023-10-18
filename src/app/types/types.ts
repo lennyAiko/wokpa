@@ -10,3 +10,8 @@ export type CardType = {
     catImg: string,
     category: string
 }
+
+export type CategoryType = {
+  message: string,
+  data: [{id:string, name:string, type:string, image_url:string, created_at: string, updated_at: string}]
+}
