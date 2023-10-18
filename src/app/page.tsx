@@ -86,7 +86,12 @@ export default function Home() {
                 <img src='/section/star.png' className='w-4'/>
                 <p className='text-base font-bold text-white'>Pick of the week</p>
               </div>
-              <img src='/section/pick.png' className='w-72' />
+              <div className='relative'>
+                <img src='/section/pick.png' className='w-72' />
+                <div className="flex flex-row items-center gap-1 rounded-full w-fit h-fit bg-[#7B61FF] p-2 absolute bottom-[7%] right-[23%] cursor-pointer">
+                  <span className='text-[10px] font-bold text-white'>LISTEN NOW</span><img src="/section/play.png" className="w-4 h-4" />
+                </div>
+              </div>
             </div>
 
             <div className='w-2/3 mt-7'>
