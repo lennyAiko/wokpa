@@ -1,6 +1,9 @@
 import Image from 'next/image'
 
 import Menu from './component/menu'
+import Card from './component/card'
+
+import getTrimString from './utils/trimString'
 
 export default function Home() {
   return (
@@ -83,30 +86,42 @@ export default function Home() {
           <div className="flex flex-row">
             <div className="w-1/3">
               <div className='m-2 flex flex-row items-center gap-1'>
-                <img src='/section/star.png' className='w-4'/>
+                <img src='/section/star.png' className='w-5'/>
                 <p className='text-base font-bold text-white'>Pick of the week</p>
               </div>
               <div className='relative'>
-                <img src='/section/pick.png' className='w-72' />
-                <div className="flex flex-row items-center gap-1 rounded-full w-fit h-fit bg-[#7B61FF] p-2 absolute bottom-[7%] right-[23%] cursor-pointer">
+                <img src='/section/pick.png' className='w-[21.5rem]' />
+                <div className="flex flex-row items-center gap-1 rounded-full w-fit h-fit bg-[#7B61FF] p-2 absolute bottom-[7%] right-[10%] cursor-pointer">
                   <span className='text-[10px] font-bold text-white'>LISTEN NOW</span><img src="/section/play.png" className="w-4 h-4" />
                 </div>
               </div>
             </div>
 
-            <div className='w-2/3 mt-7'>
+            <div className='w-2/3 mt-[4%]'>
 
-              <div className="flex flex-row items-center justify-between">
+              <div className="flex flex-row items-center justify-between mb-[0.5%]">
                 <p className='text-white text-base font-bold'>Top podcasts</p>
-                <p className='text-[#1EAEA3] font-bold text-xs'>See all</p>
+                <p className='text-[#1EAEA3] font-bold text-xs cursor-pointer'>See all</p>
               </div>
 
-              <div className=''>
+              <div className='flex flex-row shrink-0 gap-2.5'>
 
                 {/** CARD */}
-                <div className=''>
+                <Card
+                name= {getTrimString("WTF")} author={getTrimString("Marc Maron")} img="/section/podcast.png" catImg='/section/entertainment.png' category='Entertainment'
+                ></Card>
 
-                </div>
+                <Card
+                name= {getTrimString("The Joe Rogan Experience")} author={getTrimString("Joe Rogan")} img="/section/podcast2.png" catImg='/section/entertainment.png' category='Entertainment'
+                ></Card>
+
+                <Card
+                name= {getTrimString("How did things get made?")} author={getTrimString("Mike & May")} img="/section/podcast3.png" catImg='/section/entertainment.png' category='Entertainment'
+                ></Card>
+
+                <Card
+                name= {getTrimString("WTF")} author={getTrimString("Marc Maron")} img="/section/podcast.png" catImg='/section/entertainment.png' category='Entertainment'
+                ></Card>
 
               </div>
 
