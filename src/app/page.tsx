@@ -52,23 +52,23 @@ export default function Home() {
 
             <div className='w-1/2 justify-end items-center flex'>
 
-              <div className="flex flex-row items-center gap-2 bg-black rounded-full w-fit h-fit py-2 px-2.5 shadow-md shadow-[#1EAEA3]/50 cursor-pointer">
-                <img src="/nav/mobile.png" alt="" className="w-3.5 h-5" />
-                <span className="font-medium text-base text-[rgb(30,174,163)]">Download the app</span>
+              <div className="flex flex-row items-center gap-2 bg-black rounded-full w-fit h-fit py-2 px-2 shadow-md shadow-[#1EAEA3]/50 cursor-pointer">
+                <img src="/nav/mobile.png" alt="" className="w-3 h-4" />
+                <p className="font-medium text-xs text-[rgb(30,174,163)]">Download the app</p>
               </div>
 
             </div>
 
             <div className="flex flex-row gap-3 items-center justify-end w-1/2 mr-2">
 
-              <div className="flex flex-row flex-nowrap items-center gap-2 bg-[#1EAEA3] w-fit h-fit justify-center py-2 px-2.5 rounded-2xl cursor-pointer">
-                <img src="/menu/pod.png" alt="" className="" />
-                <span className="font-[600] text-white">SIGN UP</span>
+              <div className="flex flex-row flex-nowrap items-center gap-2 bg-[#1EAEA3] w-fit h-fit justify-center py-2 px-2.5 rounded-xl cursor-pointer">
+                <img src="/menu/pod.png" alt="" className="w-4" />
+                <span className="font-[600] text-xs text-white">SIGN UP</span>
               </div>
 
-              <div className="flex flex-row items-center gap-2 border-white border-2 w-fit h-fit justify-center py-2 px-2 rounded-2xl cursor-pointer">
-                <img src="/nav/person.png" alt="" className="" />
-                <span className="font-[600] text-white">LOG IN</span>
+              <div className="flex flex-row items-center gap-2 border-white border-2 w-fit h-fit justify-center py-2 px-2 rounded-xl cursor-pointer">
+                <img src="/nav/person.png" alt="" className="w-2.5" />
+                <span className="font-[600] text-xs text-white">LOG IN</span>
               </div>
             
             </div>
