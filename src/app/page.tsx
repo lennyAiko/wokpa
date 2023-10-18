@@ -4,12 +4,12 @@ import Menu from './component/menu'
 
 export default function Home() {
   return (
-    <div className='w-screen h-screen bg-[#212121]'>
+    <div className='w-screen h-screen bg-[#212121] flex flex-nowrap'>
 
       {/* SIDE NAV BAR */}
-      <div className='shrink-0 bg-[#303030] flex flex-col sticky w-[15%] h-full p-1'>
+      <div className='shrink-0 bg-[#303030] flex flex-col sticky w-[15%] h-full p-1 items-start flex-nowrap'>
 
-        <img src="wokpalogo.png" className='w-16 h-8 shrink-0 top-[4px] left-[15px] relative mb-4' />
+        <img src="/menu/wokpalogo.png" className='w-16 h-8 shrink-0 top-[4px] left-[15px] relative mb-4' />
 
         <div>
           <Menu name='Discover' img='/menu/sound.png'></Menu>
@@ -20,9 +20,9 @@ export default function Home() {
           <p className='font-bold text-xs text-white m-3'>Your Library</p>
 
           <div className="flex flex-row items-center m-3 gap-12">
-            <img src="/menu/love.png" alt="" className="cursor-pointer" />
-            <img src="/menu/strokes.png" alt="" className="cursor-pointer" />
-            <img src="/menu/plus.png" alt="" className="cursor-pointer" />
+            <img src="/menu/love.png" alt="" className="cursor-pointer w-3.5" />
+            <img src="/menu/strokes.png" alt="" className="cursor-pointer w-3.5" />
+            <img src="/menu/plus.png" alt="" className="cursor-pointer w-3.5" />
           </div>
 
           <Menu name='Your playlist' img='/menu/music.png'></Menu>
@@ -37,6 +37,37 @@ export default function Home() {
         </div>
 
       </div>
+
+      {/* HEADER NAV BAR */}
+      <div className='flex flex-row h-[77px] w-full items-center bg-[#272727]'>
+        <div className="flex flex-row items-center h-[46px] relative">
+          <input type="text" name="" id="" 
+          className="placeholder:text-slate-400 text-xs font-medium w-[400px] h-[40px] rounded-[12px] my-3 mx-4 p-3"
+          placeholder="Search by Podcast name, Host name, Categories, Tags ...."/>
+          <img src="/nav/search.png" alt="" className="left-[88%] absolute w-3.5" />
+        </div>
+
+        <div className="w-full flex flex-row flex-nowrap items-center justify-around">
+
+          <div className="flex flex-row items-center gap-2 bg-black rounded-full w-fit h-fit py-2 px-2.5 shadow-md shadow-[#1EAEA3]/50">
+            <img src="/nav/mobile.png" alt="" className="w-3.5 h-5" />
+            <span className="font-medium text-base text-[rgb(30,174,163)]">Download the app</span>
+          </div>
+
+          <div className="flex flex-row flex-nowrap items-center gap-2 bg-[#1EAEA3] w-fit h-fit justify-center py-2 px-2.5 rounded-2xl cursor-pointer">
+            <img src="/menu/pod.png" alt="" className="" />
+            <span className="font-[600] text-white">SIGN UP</span>
+          </div>
+
+          <div className="flex flex-row items-center gap-2 border-white border-2 w-fit h-fit justify-center py-2 px-2 rounded-2xl cursor-pointer">
+            <img src="/nav/person.png" alt="" className="" />
+            <span className="font-[600] text-white">LOG IN</span>
+          </div>
+
+        </div>
+
+      </div>
+
 
     </div>
   )
