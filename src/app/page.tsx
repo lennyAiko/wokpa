@@ -38,30 +38,75 @@ export default function Home() {
 
       </div>
 
-      {/* HEADER NAV BAR */}
-      <div className='flex flex-row h-[77px] w-full items-center bg-[#272727]'>
-        <div className="flex flex-row items-center h-[46px] relative">
-          <input type="text" name="" id="" 
-          className="placeholder:text-slate-400 text-xs font-medium w-[400px] h-[40px] rounded-[12px] my-3 mx-4 p-3"
-          placeholder="Search by Podcast name, Host name, Categories, Tags ...."/>
-          <img src="/nav/search.png" alt="" className="left-[88%] absolute w-3.5" />
+      <div className='flex flex-col w-full h-full'>
+        {/* HEADER NAV BAR */}
+        <div className='flex flex-row h-[77px] w-full items-center bg-[#272727]'>
+          <div className="flex flex-row items-center h-[46px] relative">
+            <input type="text" name="" id="" 
+            className="placeholder:text-slate-400 text-xs font-medium w-[400px] h-[40px] rounded-[12px] my-3 mx-4 p-3"
+            placeholder="Search by Podcast name, Host name, Categories, Tags ...."/>
+            <img src="/nav/search.png" alt="" className="left-[88%] absolute w-3.5" />
+          </div>
+
+          <div className="flex flex-nowrap flex-row items-center ml-[10%] w-full">
+
+            <div className='w-1/2 justify-end items-center flex'>
+
+              <div className="flex flex-row items-center gap-2 bg-black rounded-full w-fit h-fit py-2 px-2.5 shadow-md shadow-[#1EAEA3]/50 cursor-pointer">
+                <img src="/nav/mobile.png" alt="" className="w-3.5 h-5" />
+                <span className="font-medium text-base text-[rgb(30,174,163)]">Download the app</span>
+              </div>
+
+            </div>
+
+            <div className="flex flex-row gap-3 items-center justify-end w-1/2 mr-2">
+
+              <div className="flex flex-row flex-nowrap items-center gap-2 bg-[#1EAEA3] w-fit h-fit justify-center py-2 px-2.5 rounded-2xl cursor-pointer">
+                <img src="/menu/pod.png" alt="" className="" />
+                <span className="font-[600] text-white">SIGN UP</span>
+              </div>
+
+              <div className="flex flex-row items-center gap-2 border-white border-2 w-fit h-fit justify-center py-2 px-2 rounded-2xl cursor-pointer">
+                <img src="/nav/person.png" alt="" className="" />
+                <span className="font-[600] text-white">LOG IN</span>
+              </div>
+            
+            </div>
+
+          </div>
+
         </div>
 
-        <div className="w-full flex flex-row flex-nowrap items-center justify-around">
+        {/* SECTION */}
+        <div className='m-2'>
 
-          <div className="flex flex-row items-center gap-2 bg-black rounded-full w-fit h-fit py-2 px-2.5 shadow-md shadow-[#1EAEA3]/50">
-            <img src="/nav/mobile.png" alt="" className="w-3.5 h-5" />
-            <span className="font-medium text-base text-[rgb(30,174,163)]">Download the app</span>
-          </div>
+          <div className="flex flex-row">
+            <div className="w-1/3">
+              <div className='m-2 flex flex-row items-center gap-1'>
+                <img src='/section/star.png' className='w-4'/>
+                <p className='text-base font-bold text-white'>Pick of the week</p>
+              </div>
+              <img src='/section/pick.png' className='w-72' />
+            </div>
 
-          <div className="flex flex-row flex-nowrap items-center gap-2 bg-[#1EAEA3] w-fit h-fit justify-center py-2 px-2.5 rounded-2xl cursor-pointer">
-            <img src="/menu/pod.png" alt="" className="" />
-            <span className="font-[600] text-white">SIGN UP</span>
-          </div>
+            <div className='w-2/3 mt-7'>
 
-          <div className="flex flex-row items-center gap-2 border-white border-2 w-fit h-fit justify-center py-2 px-2 rounded-2xl cursor-pointer">
-            <img src="/nav/person.png" alt="" className="" />
-            <span className="font-[600] text-white">LOG IN</span>
+              <div className="flex flex-row items-center justify-between">
+                <p className='text-white text-base font-bold'>Top podcasts</p>
+                <p className='text-[#1EAEA3] font-bold text-xs'>See all</p>
+              </div>
+
+              <div className=''>
+
+                {/** CARD */}
+                <div className=''>
+
+                </div>
+
+              </div>
+
+            </div>
+
           </div>
 
         </div>
