@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 interface BaseHeadProps {
     title: string
     description: string

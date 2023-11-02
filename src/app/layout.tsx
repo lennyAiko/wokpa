@@ -4,6 +4,7 @@ import './globals.css'
 
 import { SEO_TITLE, SEO_DESCRIPTION } from '@/utils/config'
 import BaseHead from '@/components/BaseHead'
+import SideNav from '@/components/nav/SideNav'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,9 +24,12 @@ export default function RootLayout({
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}
       />
-      <body 
-        className={`${inter.className} container`}
-      >{children}</body>
+      <body className={inter.className}>
+        <div className='container flex flex-row'>
+          <SideNav />
+          {children}
+        </div>
+      </body>
     </html>
   )
 }
