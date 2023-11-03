@@ -3,8 +3,9 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 
 import { SEO_TITLE, SEO_DESCRIPTION } from '@/utils/config'
-import BaseHead from '@/components/BaseHead'
+import BaseHead from '@/components/headers/BaseHead'
 import SideNav from '@/components/nav/SideNav'
+import Header from '@/components/headers/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,11 +25,20 @@ export default function RootLayout({
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}
       />
-      <body className={inter.className}>
-        <div className='container flex flex-row'>
+      <body className={`${inter.className} flex flex-row w-full flex-auto`}>
+        
+        <div className='lg:w-1/4 md:w-1/3 sm:2/3'>
           <SideNav />
-          {children}
         </div>
+
+        <div className="lg:w-3/4 md:w-2/3 sm:w-1/3">
+          
+          <Header />
+
+          {children}
+
+        </div> 
+
       </body>
     </html>
   )
