@@ -43,7 +43,7 @@ export default function SideNav () {
 
                 {
                     NavData.slice(7, NavData.length).map((data) => (
-                        <Link href={data.link ? `${data.link}` : "/"}>
+                        <Link href={data.link ? `${data.link}` : "/"} key={data.name}>
                             <div className="flex flex-row items-center hover:bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] w-full tracking-normal p-2 mr-2">
                                 <img src={data.img} alt={`${data.name} image`} 
                                 className="w-5 h-5 lg:m-2 md:m-2.5 m-2"/>
