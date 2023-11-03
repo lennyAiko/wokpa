@@ -4,8 +4,8 @@ export default function Header() {
 
             <div className="p-2 ml-2 flex flex-row items-center relative w-3/5">
                 <input type="text" placeholder="Search by Podcast Name, Host name, Categories, Tags..." 
-                className="p-2 w-[51%] rounded-xl placeholder:text-sm placeholder:font-normal"/>
-                <img src="/header/search.svg" alt="search icon" className="absolute left-[48%]" />
+                className="p-2.5 w-[49%] rounded-xl placeholder:text-sm placeholder:font-normal"/>
+                <img src="/header/search.svg" alt="search icon" className="absolute left-[46%]" />
             </div>
 
             <div className="w-1/5 mr-12">
