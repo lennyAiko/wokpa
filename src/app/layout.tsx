@@ -27,11 +27,11 @@ export default function RootLayout({
       />
       <body className={`${inter.className} flex flex-row w-full flex-auto`}>
         
-        <div className='lg:w-1/4 md:w-1/3 sm:2/3'>
+        <div className='lg:w-1/5 md:w-1/3 sm:2/3'>
           <SideNav />
         </div>
 
-        <div className="lg:w-3/4 md:w-2/3 sm:w-1/3">
+        <div className="lg:w-4/5 md:w-2/3 sm:w-1/3">
           
           <Header />
 
