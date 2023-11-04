@@ -6,7 +6,7 @@ import { SEO_TITLE, SEO_DESCRIPTION } from '@/utils/config'
 import BaseHead from '@/components/headers/BaseHead'
 import SideNav from '@/components/nav/SideNav'
 import Header from '@/components/headers/Header'
-import Footer from '@/components/Footer'
+import Footer from '@/components/footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -36,11 +36,7 @@ export default function RootLayout({
           
           <Header />
 
-          <main className='flex-1 bg-[#212121] overflow-scroll'>
-
-            {children}
-
-          </main>
+          {children}
 
           <Footer />
 

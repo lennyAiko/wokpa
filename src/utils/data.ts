@@ -20,3 +20,48 @@ export const NavData = [
     {name:"Wokpa for advertisers", img:"/sidenav/wokpa-advertisers.svg", link: "/"},
     {name:"Read our blogs", img:"/sidenav/read-blog.svg", link: "/"},
 ]
+
+export const TopPodcastsData = [
+    {
+        img: "/dashboard-main/marcmaron.svg",
+        title: "WTF",
+        author: "Marc Maron",
+        categoryImage: "/dashboard-main/category.svg",
+        category: "Entertainment"
+    },
+    {
+        img: "/dashboard-main/joerogan.svg",
+        title: "The Joe Rogan Experience",
+        author: "Joe Rogan",
+        categoryImage: "/dashboard-main/category.svg",
+        category: "Entertainment"
+    },    
+    {
+        img: "/dashboard-main/joerogan.svg",
+        title: "How Did Things Get",
+        author: "Mike & May",
+        categoryImage: "/dashboard-main/category.svg",
+        category: "Entertainment"
+    },
+    {
+        img: "/dashboard-main/marcmaron.svg",
+        title: "WTF",
+        author: "Marc Maron",
+        categoryImage: "/dashboard-main/category.svg",
+        category: "Entertainment"
+    },
+    {
+        img: "/dashboard-main/marcmaron.svg",
+        title: "WTF",
+        author: "Marc Maron",
+        categoryImage: "/dashboard-main/category.svg",
+        category: "Entertainment"
+    },    
+    {
+        img: "/dashboard-main/marcmaron.svg",
+        title: "WTF",
+        author: "Marc Maron",
+        categoryImage: "/dashboard-main/category.svg",
+        category: "Entertainment"
+    }
+]
