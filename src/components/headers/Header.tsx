@@ -2,10 +2,12 @@ export default function Header() {
     return (
         <div className="bg-[#272727] flex flex-row items-center p-2">
 
-            <div className="p-2 ml-2 flex flex-row items-center relative w-3/5">
+            <div className="p-2 ml-2 relative block w-3/5">
                 <input type="text" placeholder="Search by Podcast Name, Host name, Categories, Tags..." 
-                className="p-2.5 w-[49%] rounded-xl placeholder:text-sm placeholder:font-normal"/>
-                <img src="/header/search.svg" alt="search icon" className="absolute left-[46%]" />
+                className="p-2.5 w-[50%] rounded-xl placeholder:text-sm placeholder:font-normal"/>
+            <span className="absolute inset-y-0 left-[46%] flex items-center"> 
+                    <img src="/header/search.svg" alt="search icon" />
+                </span>
             </div>
 
             <div className="w-1/5 mr-12">
@@ -15,9 +17,9 @@ export default function Header() {
                 </div>
             </div>
 
-            <div className="w-1/5 flex flex-row flex-auto">
+            <div className="w-1/5 flex flex-row flex-1 min-w-0">
 
-                <div className="flex flex-row items-center space-x-8">
+                <div className="flex flex-row items-center space-x-6">
 
                     <div className="flex flex-row items-center space-x-1 bg-[#1EAEA3] py-2 px-3 rounded-xl">
                         <img src="/sidenav/wokpa-podcasters.svg" alt="" />

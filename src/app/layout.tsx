@@ -6,6 +6,7 @@ import { SEO_TITLE, SEO_DESCRIPTION } from '@/utils/config'
 import BaseHead from '@/components/headers/BaseHead'
 import SideNav from '@/components/nav/SideNav'
 import Header from '@/components/headers/Header'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,11 +32,17 @@ export default function RootLayout({
           <SideNav />
         </div>
 
-        <div className="lg:w-4/5 md:w-2/3 sm:w-1/3">
+        <div className="lg:w-4/5 md:w-2/3 sm:w-1/3 flex flex-col h-screen">
           
           <Header />
 
-          {children}
+          <main className='flex-1 bg-[#212121] overflow-scroll'>
+
+            {children}
+
+          </main>
+
+          <Footer />
 
         </div> 
 
