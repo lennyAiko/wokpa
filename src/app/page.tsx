@@ -1,9 +1,12 @@
 import Card from "@/components/dashboard/Card"
-import { TopPodcastsData } from "@/utils/data"
+import { TopCategoriesData, TopPodcastsData } from "@/utils/data"
+import TopCategories from "@/components/dashboard/TopCategories"
+import { useState } from 'react'
 
 export default function Home() {
+
   return (
-    <main className='flex-1 bg-[#212121] overflow-scroll flex-col'>
+    <main className='flex-1 bg-[#212121] flex-col'>
 
       <div className="flex flex-1 items-center gap-2 mx-6 mt-6 mb-2">
         <img src="/dashboard-main/star.svg" alt="star" />
@@ -53,6 +56,37 @@ export default function Home() {
         </div>
 
       </div>
+
+      <div className="bg-[#30303080] m-6">
+        
+        <div className="flex items-center">
+          <img src="/dashboard-main/topcategories.svg" alt="top categories" className="-mr-3" />
+          <span className="font-bold text-2xl text-white">Top Categories</span>
+        </div>
+
+        <div className="flex items-center m-3">
+
+          <div className="flex flex-wrap w-5/6 pb-4 rounded-[3px]">
+
+            {
+              TopCategoriesData.map(data => (
+                <TopCategories 
+                  img={data.img}
+                  color={data.color}
+                  name={data.name}
+                />
+              ))
+            }
+
+          </div>
+          
+          <span className="w-1/6 font-bold text-[15px] text-[#1EAEA3]">See all categories {'>'}</span>
+
+        </div>
+
+
+      </div>
+
     </main>
 
   )

@@ -8,7 +8,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({img, title, author, categoryImage, category, ...props}) => {
     return (
-        <div className="bg-[#30303080] shrink-0 rounded-[3px] w-[220px]">
+        <div className="bg-[#30303080] shrink-0 rounded-[3px] w-[220px] shadow-md">
             <img src={img} alt={`${author} image`} />
             <h3 className="font-semibold text-lg text-white px-3 truncate">{title}</h3>
             <span className="font-normal text-[15px] text-white px-3">By: {author}</span>

@@ -65,3 +65,46 @@ export const TopPodcastsData = [
         category: "Entertainment"
     }
 ]
+
+export const TopCategoriesData = [
+    {
+        img: "/dashboard-main/comedy.svg",
+        name: "Comedy",
+        color: "text-yellow-400"
+    },
+    {
+        img: "/dashboard-main/h&f.svg",
+        name: "Health & Fitness",
+        color: "text-blue-400"
+    },    
+    {
+        img: "/dashboard-main/love.svg",
+        name: "Love & Romance",
+        color: "text-red-400"
+    },
+    {
+        img: "dashboard-main/education.svg",
+        name: "Education",
+        color: "text-blue-300"
+    },       
+    {
+        img: "dashboard-main/religion.svg",
+        name: "Religion",
+        color: "text-blue-300"
+    },
+    {
+        img: "dashboard-main/music.svg",
+        name: "Music",
+        color: "text-blue-300"
+    },   
+    {
+        img: "dashboard-main/technology.svg",
+        name: "Technology",
+        color: "text-blue-300"
+    },   
+    {
+        img: "dashboard-main/g&p.svg",
+        name: "Government & Politics",
+        color: "text-blue-300"
+    }
+]
