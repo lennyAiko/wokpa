@@ -1,4 +1,5 @@
 import TwoDigits from "@/utils/extras"
+import LatestEpisodesList from "./LatestEpisodesList"
 
 interface LatestEpisodesType {
     number: number
@@ -18,13 +19,13 @@ const LatestEpisodes: React.FC<LatestEpisodesType> = ({number, title, author, da
 
             <div className="flex gap-2 mt-4 -ml-10 items-center justify-between">
 
-              <img src={img} alt="podcast image" className="" />
-
-              <div className="flex flex-col gap-0.5 w-4/5">
-                <span className="font-semibold text-lg text-white truncate">{title}</span>
-                <span className="text-white text-sm font-normal truncate">By: {author}</span>
-                <span className="text-white text-xs font-normal truncate">{date}, {duration}</span>
-              </div>
+              <LatestEpisodesList
+                img={img}
+                author={author}
+                duration={duration}
+                date={date}
+                title={title}
+              />
 
               <div className="w-1/5 flex gap-1 items-center">
                 <img src="/dashboard-main/rating-star-colored.svg" alt="rating" />

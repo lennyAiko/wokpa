@@ -174,3 +174,76 @@ export const LatestEpisodesData = [
         img: "/dashboard-main/hdtgm.svg"
     }
 ]
+
+export const MadeForYouData = [
+    {
+        title: "The ministry of prayer and the world.",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        img: "/dashboard-main/hdtgm.svg"
+    },            
+    {
+        title: "The ministry of prayer and the world.",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        img: "/dashboard-main/hdtgm.svg"
+    },   
+    {
+        title: "The ministry of prayer and the world.",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        img: "/dashboard-main/hdtgm.svg"
+    },   
+    {
+        title: "The ministry of prayer and the world.",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        img: "/dashboard-main/hdtgm.svg"
+    },   
+    {
+        title: "The ministry of prayer and the world.",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        img: "/dashboard-main/hdtgm.svg"
+    },   
+    {
+        title: "The ministry of prayer and the world.",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        img: "/dashboard-main/hdtgm.svg"
+    },   
+    {
+        title: "The ministry of prayer and the world.",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        img: "/dashboard-main/hdtgm.svg"
+    },   
+    {
+        title: "The ministry of prayer and the world.",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        img: "/dashboard-main/hdtgm.svg"
+    },   
+    {
+        title: "The ministry of prayer and the world.",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        img: "/dashboard-main/hdtgm.svg"
+    },   
+    {
+        title: "The ministry of prayer and the world.",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        img: "/dashboard-main/hdtgm.svg"
+    },
+]
