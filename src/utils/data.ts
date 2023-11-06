@@ -475,3 +475,11 @@ export const OtherListenersData = [
         img: "/dashboard-main/joe.svg"
     }
 ]
+
+export const KeywordsData = [
+    "relationship", "engagement", "football", "hiphop", "hollywood", "sex&romance", "food", "comedy", "englishfootball", "travel&tour",
+    "relationship", "engagement", "football", "hiphop", "hollywood", "sex&romance", "food", "comedy", "englishfootball", "travel&tour",
+    "relationship", "engagement", "football", "hiphop", "hollywood", "sex&romance", "food", "comedy", "englishfootball", "travel&tour",
+    "relationship", "engagement", "football", "hiphop", "hollywood", "sex&romance", "food", "comedy", "englishfootball", "travel&tour",
+    "relationship", "engagement", "football", "hiphop", "hollywood", "sex&romance", "food", "comedy", "englishfootball", "travel&tour",
+]

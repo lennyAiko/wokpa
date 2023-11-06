@@ -1,5 +1,5 @@
 import TopCard from "@/components/dashboard/TopCard"
-import { TopCategoriesData, TopPodcastsData, LatestEpisodesData, MadeForYouData, PopularCardData, HostSuggestionData, OtherListenersData } from "@/utils/data"
+import { TopCategoriesData, TopPodcastsData, LatestEpisodesData, MadeForYouData, PopularCardData, HostSuggestionData, OtherListenersData, KeywordsData } from "@/utils/data"
 import TopCategories from "@/components/dashboard/TopCategories"
 import LatestEpisodes from "@/components/dashboard/LatestEpisodes"
 import LatestEpisodesList from "@/components/dashboard/LatestEpisodesList"
@@ -249,6 +249,24 @@ export default function Home() {
       
       </div>
 
+      <div className="m-8 flex flex-col">
+
+        <div className="flex flex-col items-start">
+          <div className="flex items-center -mb-3">
+            <img src="/dashboard-main/topcategories.svg" alt="latest episodes" className="-mr-3" />
+            <span className="text-white font-bold text-[28px]">Search by popular keywords</span>
+          </div>
+        </div>
+
+        <div className="flex gap-3 m-8 flex-wrap">
+          {
+            KeywordsData.map(data => (
+              <span className="text-white font-semibold text-base bg-[#575757] rounded-full px-4 py-2.5">#{data}</span>
+            ))
+          }
+        </div>
+
+      </div>
     </main>
 
   )
