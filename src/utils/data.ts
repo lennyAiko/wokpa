@@ -247,3 +247,123 @@ export const MadeForYouData = [
         img: "/dashboard-main/hdtgm.svg"
     },
 ]
+
+export const PopularCardData = [
+    {
+        title: "WTF",
+        posterImg: "/dashboard-main/marcmaron.svg",
+        author: "Marc Maron",
+        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg2: "/dashboard-main/marcmaron.svg",
+        subImg3: "/dashboard-main/marcmaron.svg",
+        subscribers: 620
+    },               
+    {
+        title: "WTF",
+        posterImg: "/dashboard-main/marcmaron.svg",
+        author: "Marc Maron",
+        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg2: "/dashboard-main/marcmaron.svg",
+        subImg3: "/dashboard-main/marcmaron.svg",
+        subscribers: 6200
+    },   
+    {
+        title: "WTF",
+        posterImg: "/dashboard-main/marcmaron.svg",
+        author: "Marc Maron",
+        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg2: "/dashboard-main/marcmaron.svg",
+        subImg3: "/dashboard-main/marcmaron.svg",
+        subscribers: 62000
+    },   
+    {
+        title: "WTF",
+        posterImg: "/dashboard-main/marcmaron.svg",
+        author: "Marc Maron",
+        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg2: "/dashboard-main/marcmaron.svg",
+        subImg3: "/dashboard-main/marcmaron.svg",
+        subscribers: 620000
+    },    
+    {
+        title: "WTF",
+        posterImg: "/dashboard-main/marcmaron.svg",
+        author: "Marc Maron",
+        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg2: "/dashboard-main/marcmaron.svg",
+        subImg3: "/dashboard-main/marcmaron.svg",
+        subscribers: 6200000
+    },   {
+        title: "WTF",
+        posterImg: "/dashboard-main/marcmaron.svg",
+        author: "Marc Maron",
+        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg2: "/dashboard-main/marcmaron.svg",
+        subImg3: "/dashboard-main/marcmaron.svg",
+        subscribers: 62000000
+    },   {
+        title: "WTF",
+        posterImg: "/dashboard-main/marcmaron.svg",
+        author: "Marc Maron",
+        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg2: "/dashboard-main/marcmaron.svg",
+        subImg3: "/dashboard-main/marcmaron.svg",
+        subscribers: 62000000
+    },   {
+        title: "WTF",
+        posterImg: "/dashboard-main/marcmaron.svg",
+        author: "Marc Maron",
+        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg2: "/dashboard-main/marcmaron.svg",
+        subImg3: "/dashboard-main/marcmaron.svg",
+        subscribers: 620
+    },   {
+        title: "WTF",
+        posterImg: "/dashboard-main/marcmaron.svg",
+        author: "Marc Maron",
+        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg2: "/dashboard-main/marcmaron.svg",
+        subImg3: "/dashboard-main/marcmaron.svg",
+        subscribers: 620
+    },   {
+        title: "WTF",
+        posterImg: "/dashboard-main/marcmaron.svg",
+        author: "Marc Maron",
+        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg2: "/dashboard-main/marcmaron.svg",
+        subImg3: "/dashboard-main/marcmaron.svg",
+        subscribers: 620
+    },   {
+        title: "WTF",
+        posterImg: "/dashboard-main/marcmaron.svg",
+        author: "Marc Maron",
+        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg2: "/dashboard-main/marcmaron.svg",
+        subImg3: "/dashboard-main/marcmaron.svg",
+        subscribers: 620
+    },   {
+        title: "WTF",
+        posterImg: "/dashboard-main/marcmaron.svg",
+        author: "Marc Maron",
+        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg2: "/dashboard-main/marcmaron.svg",
+        subImg3: "/dashboard-main/marcmaron.svg",
+        subscribers: 62000
+    },   {
+        title: "WTF",
+        posterImg: "/dashboard-main/marcmaron.svg",
+        author: "Marc Maron",
+        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg2: "/dashboard-main/marcmaron.svg",
+        subImg3: "/dashboard-main/marcmaron.svg",
+        subscribers: 62000
+    },   {
+        title: "WTF",
+        posterImg: "/dashboard-main/marcmaron.svg",
+        author: "Marc Maron",
+        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg2: "/dashboard-main/marcmaron.svg",
+        subImg3: "/dashboard-main/marcmaron.svg",
+        subscribers: 620000
+    },
+]

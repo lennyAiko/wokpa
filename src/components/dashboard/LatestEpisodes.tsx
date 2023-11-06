@@ -1,4 +1,4 @@
-import TwoDigits from "@/utils/extras"
+import {TwoDigits} from "@/utils/extras"
 import LatestEpisodesList from "./LatestEpisodesList"
 
 interface LatestEpisodesType {

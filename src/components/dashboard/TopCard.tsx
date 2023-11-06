@@ -1,4 +1,4 @@
-interface CardProps {
+interface TopCardProps {
     img: string
     title: string
     author: string
@@ -6,7 +6,7 @@ interface CardProps {
     category: string
 }
 
-const Card: React.FC<CardProps> = ({img, title, author, categoryImage, category, ...props}) => {
+const TopCard: React.FC<TopCardProps> = ({img, title, author, categoryImage, category, ...props}) => {
     return (
         <div className="bg-[#30303080] shrink-0 rounded-[3px] w-[220px] shadow-md">
             <img src={img} alt={`${author} image`} />
@@ -20,4 +20,4 @@ const Card: React.FC<CardProps> = ({img, title, author, categoryImage, category,
     )
 }
 
-export default Card 
+export default TopCard 

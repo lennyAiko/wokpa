@@ -1,8 +1,9 @@
-import Card from "@/components/dashboard/Card"
-import { TopCategoriesData, TopPodcastsData, LatestEpisodesData, MadeForYouData } from "@/utils/data"
+import TopCard from "@/components/dashboard/TopCard"
+import { TopCategoriesData, TopPodcastsData, LatestEpisodesData, MadeForYouData, PopularCardData } from "@/utils/data"
 import TopCategories from "@/components/dashboard/TopCategories"
 import LatestEpisodes from "@/components/dashboard/LatestEpisodes"
 import LatestEpisodesList from "@/components/dashboard/LatestEpisodesList"
+import PopularCard from "@/components/dashboard/PopularCard"
 
 export default function Home() {
 
@@ -42,7 +43,7 @@ export default function Home() {
             {
               TopPodcastsData.map((data) => (
 
-                <Card 
+                <TopCard 
                   img={data.img}
                   title={data.title}
                   category={data.category}
@@ -88,7 +89,7 @@ export default function Home() {
 
       </div>
 
-      <div className="flex gap-6 m-6">
+      <div className="flex gap-8 m-6">
 
         <div className="flex bg-[#30303080] h-[632px] flex-col w-2/3">
 
@@ -152,6 +153,35 @@ export default function Home() {
 
         </div>
 
+      </div>
+
+      <div className='h-[1px] bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] my-3 w-full mt-14'></div>
+
+      <div className="m-6 flex flex-col">
+
+        <div className="flex flex-col items-start">
+          <div className="flex items-center -mb-3">
+            <img src="/dashboard-main/topcategories.svg" alt="latest episodes" className="-mr-3" />
+            <span className="text-white font-bold text-[28px]">Popular & Trending Podcasts</span>
+          </div>
+          <span className="text-[#C3C3C3] font-medium text-lg ml-16">#Community's choice</span>
+        </div>
+
+        <div className="shrink-0 rounded-[3px] shadow-md flex gap-3 overflow-x-scroll m-6">
+          {
+            PopularCardData.map(data => (
+              <PopularCard
+                posterImg={data.posterImg}
+                title={data.title}
+                author={data.author}
+                subImg1={data.subImg1}
+                subImg2={data.subImg2}
+                subImg3={data.subImg3}
+                subscribers={data.subscribers}
+              />
+            ))
+          }
+        </div>
       </div>
 
     </main>
