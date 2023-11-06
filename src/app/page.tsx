@@ -1,7 +1,8 @@
 import Card from "@/components/dashboard/Card"
-import { TopCategoriesData, TopPodcastsData } from "@/utils/data"
+import { TopCategoriesData, TopPodcastsData, LatestEpisodesData } from "@/utils/data"
 import TopCategories from "@/components/dashboard/TopCategories"
 import { useState } from 'react'
+import LatestEpisodes from "@/components/dashboard/LatestEpisodes"
 
 export default function Home() {
 
@@ -19,7 +20,7 @@ export default function Home() {
 
           <img src="/dashboard-main/fs.svg" alt="pick-of-the-week" />
 
-          <span className="flex flex-1 items-center gap-1 rounded-3xl bg-[#7B61FF] w-fit px-4 py-2 absolute lg:right-10 lg:top-72">
+          <span className="flex flex-1 items-center gap-1 rounded-3xl bg-[#7B61FF] w-fit px-4 py-2 absolute lg:right-10 lg:top-[80%]">
             <span className="font-bold text-sm text-white">Listen now</span>
             <img src="/dashboard-main/play-circle.svg" alt="play-circle" />
           </span>
@@ -84,6 +85,51 @@ export default function Home() {
 
         </div>
 
+
+      </div>
+
+      <div className="flex gap-6 m-6">
+
+        <div className="flex bg-[#30303080] flex-col w-2/3">
+
+          <div className="flex justify-between">
+            <div className="flex flex-col items-end">
+              <div className="flex items-center -mb-3">
+                <img src="/dashboard-main/topcategories.svg" alt="latest episodes" className="-mr-3" />
+                <span className="text-white font-bold text-[28px]">Latest episodes</span>
+              </div>
+              <span className="text-[#C3C3C3] font-medium text-lg">#Fresh out of the studio!</span>
+            </div>
+            <div className="flex items-center relative mr-6">
+              <input type="text" placeholder="Filter by category" className="px-4 py-3 w-fit h-fit bg-[#272626] border border-[#DCDCDC] rounded-xl" />
+              <img src="/dashboard-main/down.svg" alt="down" className="absolute right-5" />
+            </div>
+          </div>
+
+
+        <div className="w-full h-[632px] mx-10 mt-8 overflow-y-scroll">
+          {
+            LatestEpisodesData.map(data => (
+              <LatestEpisodes 
+                number={data.number}
+                title={data.title}
+                author={data.author}
+                date={data.date}
+                duration={data.duration}
+                likes={data.likes}
+                img={data.img}
+              />
+            ))
+          }
+        </div>
+
+
+
+        </div>
+        
+        <div className="flex flex-col w-1/3">
+          This is
+        </div>
 
       </div>
 

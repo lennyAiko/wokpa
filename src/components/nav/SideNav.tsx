@@ -4,7 +4,7 @@ import { NavData } from '@/utils/data'
 
 export default function SideNav () {
     return (
-    <div className='bg-[#303030] text-white flex flex-col items-left  min-h-full sticky w-full'>
+    <div className='bg-[#303030] text-white flex flex-col items-left h-screen fixed top-0 left-0 lg:w-1/5 md:w-1/3 sm:2/3'>
 
             <div className='lg:mx-8 md:mx-6 mx-6 my-4'>
                 <Link href="/">
