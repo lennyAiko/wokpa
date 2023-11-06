@@ -13,7 +13,7 @@ interface LatestEpisodesType {
 
 const LatestEpisodes: React.FC<LatestEpisodesType> = ({number, title, author, date, duration, likes, img, ...props}) => {
     return (
-        <div className="flex mb-4 gap-4 overflow-y-scroll">
+        <div className="flex mb-4 gap-4 overflow-y-scroll shrink-0">
 
             <span className="font-medium text-[13px] text-white">{TwoDigits(number)}</span>
 

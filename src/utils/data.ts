@@ -431,3 +431,47 @@ export const HostSuggestionData = [
         podcastName: "The Joe Rogan Experience"
     },
 ]
+
+export const OtherListenersData = [
+    {
+        title: "Sarah Leah",
+        date: "May 4, 2022",
+        img: "/dashboard-main/joe.svg"
+    },    {
+        title: "Sarah Leah",
+        date: "May 4, 2022",
+        img: "/dashboard-main/joe.svg"
+    },   {
+        title: "Sarah Leah",
+        date: "May 4, 2022",
+        img: "/dashboard-main/joe.svg"
+    },   {
+        title: "Sarah Leah",
+        date: "May 4, 2022",
+        img: "/dashboard-main/joe.svg"
+    },   {
+        title: "Sarah Leah",
+        date: "May 4, 2022",
+        img: "/dashboard-main/joe.svg"
+    },   {
+        title: "Sarah Leah",
+        date: "May 4, 2022",
+        img: "/dashboard-main/joe.svg"
+    },   {
+        title: "Sarah Leah",
+        date: "May 4, 2022",
+        img: "/dashboard-main/joe.svg"
+    },   {
+        title: "Sarah Leah",
+        date: "May 4, 2022",
+        img: "/dashboard-main/joe.svg"
+    },   {
+        title: "Sarah Leah",
+        date: "May 4, 2022",
+        img: "/dashboard-main/joe.svg"
+    },{
+        title: "Sarah Leah",
+        date: "May 4, 2022",
+        img: "/dashboard-main/joe.svg"
+    }
+]

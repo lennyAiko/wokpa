@@ -1,5 +1,5 @@
 import TopCard from "@/components/dashboard/TopCard"
-import { TopCategoriesData, TopPodcastsData, LatestEpisodesData, MadeForYouData, PopularCardData, HostSuggestionData } from "@/utils/data"
+import { TopCategoriesData, TopPodcastsData, LatestEpisodesData, MadeForYouData, PopularCardData, HostSuggestionData, OtherListenersData } from "@/utils/data"
 import TopCategories from "@/components/dashboard/TopCategories"
 import LatestEpisodes from "@/components/dashboard/LatestEpisodes"
 import LatestEpisodesList from "@/components/dashboard/LatestEpisodesList"
@@ -199,16 +199,54 @@ export default function Home() {
         <div className="flex gap-3 items-center m-6 overflow-x-scroll">
           {
             HostSuggestionData.map(data => (
-              <div className="flex flex-col rounded-[3px] p-3 bg-white w-[230px] h-[295px]">
-                <img src={data.img} alt="" className="rounded-full w-[159px] h-[159px] object-cover mx-auto" />
-                <span className="font-semibold text-lg my-1 text-[#282828] truncate">{data.title}</span>
-                <span className="font-normal text-[13px] text-[#282828]">Host of: <br/> <span className="text-[#5A5A5A] truncate">{data.podcastName}</span></span>
-                <span className="mx-auto border-2 border-[#7B61FF] rounded-[60px] h-[35px] w-[176px] items-center flex justify-center mt-3">Follow</span>
+              <div className="flex flex-col rounded-[3px] shrink-0 p-3 bg-white w-[230px] h-[295px] items-center">
+                <img src={data.img} alt="" className="rounded-full w-[159px] h-[159px] object-cover" />
+
+                <span className="font-semibold text-lg my-1 text-[#282828] truncate mx-3">{data.title}</span>
+
+                <span className="font-normal text-[13px] text-[#282828] mx-3">Host of: <br/> <span className="text-[#5A5A5A] truncate">{data.podcastName}</span></span>
+
+                <span className="mx-auto border-2 border-[#7B61FF] rounded-[60px] h-[35px] w-[176px] items-center flex justify-center mt-3 bg-[#E6EAEE]">Follow</span>
               </div>
             ))
           }
         </div>
 
+      </div>
+
+      <div className='h-[1px] bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] my-3 w-full mt-8'></div>
+
+      <div className="m-8 flex flex-col">
+
+        <div className="flex flex-col items-start">
+          <div className="flex items-center -mb-3">
+            <img src="/dashboard-main/topcategories.svg" alt="latest episodes" className="-mr-3" />
+            <span className="text-white font-bold text-[28px]">Discover other listeners</span>
+          </div>
+          <span className="text-[#C3C3C3] font-medium text-lg ml-16">We are building a community of podcast lovers</span>
+          <span className="text-[#C3C3C3] font-medium text-lg ml-16">#Editor's choice</span>
+        </div>
+
+         <div className="flex gap-6 items-center my-6 mx-28 w-[90%] flex-wrap">
+          {
+            OtherListenersData.map(data => (
+              <div className="flex flex-col rounded-[3px] shrink-0 p-3 bg-white w-[230px] h-[295px] items-center">
+                <img src={data.img} alt="" className="rounded-full w-[159px] h-[159px] object-cover mx-auto" />
+
+                <span className="font-semibold text-lg my-1 text-[#282828] truncate mx-3">{data.title}</span>
+
+                <span className="font-normal text-[11px] text-[#282828] mx-3">Suggested for you</span>
+                
+                <span className="font-normal text-[13px] text-[#282828] mx-3">Member since {data.date}</span>
+
+                <span className="mx-auto border-2 border-[#7B61FF] rounded-[60px] h-[35px] w-[176px] items-center flex justify-center mt-3 bg-[#E6EAEE]">Follow</span>
+              </div>
+            ))
+          }
+        </div>
+
+        <span className="my-6 mx-auto text-white font-medium text-[15px] bg-[#2C2C2C] h-[46px] items-center flex justify-center w-[85%]">Load more</span>
+      
       </div>
 
     </main>
