@@ -253,7 +253,7 @@ export const PopularCardData = [
         title: "WTF",
         posterImg: "/dashboard-main/marcmaron.svg",
         author: "Marc Maron",
-        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg1: "/dashboard-main/joe.svg",
         subImg2: "/dashboard-main/marcmaron.svg",
         subImg3: "/dashboard-main/marcmaron.svg",
         subscribers: 620
@@ -262,7 +262,7 @@ export const PopularCardData = [
         title: "WTF",
         posterImg: "/dashboard-main/marcmaron.svg",
         author: "Marc Maron",
-        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg1: "/dashboard-main/joe.svg",
         subImg2: "/dashboard-main/marcmaron.svg",
         subImg3: "/dashboard-main/marcmaron.svg",
         subscribers: 6200
@@ -271,7 +271,7 @@ export const PopularCardData = [
         title: "WTF",
         posterImg: "/dashboard-main/marcmaron.svg",
         author: "Marc Maron",
-        subImg1: "/dashboard-main/marcmaron.svg",
+        subImg1: "/dashboard-main/joe.svg",
         subImg2: "/dashboard-main/marcmaron.svg",
         subImg3: "/dashboard-main/marcmaron.svg",
         subscribers: 62000
@@ -365,5 +365,69 @@ export const PopularCardData = [
         subImg2: "/dashboard-main/marcmaron.svg",
         subImg3: "/dashboard-main/marcmaron.svg",
         subscribers: 620000
+    },
+]
+
+export const HostSuggestionData = [
+    {
+        title: "Mark Bean",
+        img: "/dashboard-main/joe.svg",
+        podcastName: "The Joe Rogan Experience"
+    },                 {
+        title: "Mark Bean",
+        img: "/dashboard-main/joe.svg",
+        podcastName: "The Joe Rogan Experience"
+    },   {
+        title: "Mark Bean",
+        img: "/dashboard-main/joe.svg",
+        podcastName: "The Joe Rogan Experience"
+    },   {
+        title: "Mark Bean",
+        img: "/dashboard-main/joe.svg",
+        podcastName: "The Joe Rogan Experience"
+    },   {
+        title: "Mark Bean",
+        img: "/dashboard-main/joe.svg",
+        podcastName: "The Joe Rogan Experience"
+    },   {
+        title: "Mark Bean",
+        img: "/dashboard-main/joe.svg",
+        podcastName: "The Joe Rogan Experience"
+    },   {
+        title: "Mark Bean",
+        img: "/dashboard-main/joe.svg",
+        podcastName: "The Joe Rogan Experience"
+    },   {
+        title: "Mark Bean",
+        img: "/dashboard-main/joe.svg",
+        podcastName: "The Joe Rogan Experience"
+    },   {
+        title: "Mark Bean",
+        img: "/dashboard-main/joe.svg",
+        podcastName: "The Joe Rogan Experience"
+    },   {
+        title: "Mark Bean",
+        img: "/dashboard-main/joe.svg",
+        podcastName: "The Joe Rogan Experience"
+    },   {
+        title: "Mark Bean",
+        img: "/dashboard-main/joe.svg",
+        podcastName: "The Joe Rogan Experience"
+    },   {
+        title: "Mark Bean",
+        img: "/dashboard-main/joe.svg",
+        podcastName: "The Joe Rogan Experience"
+    },   {
+        title: "Mark Bean",
+        img: "/dashboard-main/joe.svg",
+        podcastName: "The Joe Rogan Experience"
+    },   {
+        title: "Mark Bean",
+        img: "/dashboard-main/joe.svg",
+        podcastName: "The Joe Rogan Experience"
+    },   {
+        title: "Mark Bean",
+        img: "/dashboard-main/joe.svg",
+        podcastName: "The Joe Rogan Experience"
     },
 ]

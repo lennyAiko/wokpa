@@ -1,5 +1,5 @@
 import TopCard from "@/components/dashboard/TopCard"
-import { TopCategoriesData, TopPodcastsData, LatestEpisodesData, MadeForYouData, PopularCardData } from "@/utils/data"
+import { TopCategoriesData, TopPodcastsData, LatestEpisodesData, MadeForYouData, PopularCardData, HostSuggestionData } from "@/utils/data"
 import TopCategories from "@/components/dashboard/TopCategories"
 import LatestEpisodes from "@/components/dashboard/LatestEpisodes"
 import LatestEpisodesList from "@/components/dashboard/LatestEpisodesList"
@@ -182,6 +182,33 @@ export default function Home() {
             ))
           }
         </div>
+      </div>
+      
+      <div className='h-[1px] bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] my-3 w-full mt-8'></div>
+
+      <div className="m-8 flex flex-col">
+
+        <div className="flex flex-col items-start">
+          <div className="flex items-center -mb-3">
+            <img src="/dashboard-main/topcategories.svg" alt="latest episodes" className="-mr-3" />
+            <span className="text-white font-bold text-[28px]">Podcast host suggestions</span>
+          </div>
+          <span className="text-[#C3C3C3] font-medium text-lg ml-16">#Editor's choice</span>
+        </div>
+
+        <div className="flex gap-3 items-center m-6 overflow-x-scroll">
+          {
+            HostSuggestionData.map(data => (
+              <div className="flex flex-col rounded-[3px] p-3 bg-white w-[230px] h-[295px]">
+                <img src={data.img} alt="" className="rounded-full w-[159px] h-[159px] object-cover mx-auto" />
+                <span className="font-semibold text-lg my-1 text-[#282828] truncate">{data.title}</span>
+                <span className="font-normal text-[13px] text-[#282828]">Host of: <br/> <span className="text-[#5A5A5A] truncate">{data.podcastName}</span></span>
+                <span className="mx-auto border-2 border-[#7B61FF] rounded-[60px] h-[35px] w-[176px] items-center flex justify-center mt-3">Follow</span>
+              </div>
+            ))
+          }
+        </div>
+
       </div>
 
     </main>
