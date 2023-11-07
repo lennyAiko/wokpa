@@ -21,9 +21,9 @@ export default function Home() {
 
       <div className="flex">
 
-        <div className="ml-5 relative w-1/3 mr-3">
+        <div className="ml-5 relative w-2/4">
 
-          <Image src={Assets.Fs} alt="pick-of-the-week" className="w-[528px] h-[377px]" />
+          <Image src={Assets.Fs} alt="pick-of-the-week" className="w-[628px] h-[477px]" />
 
           <span className="flex flex-1 items-center gap-1 rounded-3xl bg-[#7B61FF] w-fit px-4 py-2 absolute lg:right-10 lg:top-[80%]">
             <span className="font-bold text-sm text-white">Listen now</span>
@@ -32,7 +32,7 @@ export default function Home() {
 
         </div>
 
-        <div className="w-2/3 px-6">
+        <div className="w-2/4 pr-6 mt-4">
 
           <div className="flex justify-between">
             

@@ -30,22 +30,22 @@ const LatestEpisodes: React.FC<LatestEpisodesType> = ({number, title, author, da
               />
 
               <div className="w-1/5 flex gap-1 items-center">
-                <Image src={Assets.RatingStarColored} alt="rating" />
-                <Image src={Assets.RatingStarColored} alt="rating" />
-                <Image src={Assets.RatingStarColored} alt="rating" />
-                <Image src={Assets.RatingStarColored} alt="rating" />
-                <Image src={Assets.RatingStar} alt="rating" />
+                <Image src={Assets.RatingStarColored} alt="rating" className="w-4 h-4" />
+                <Image src={Assets.RatingStarColored} alt="rating" className="w-4 h-4" />
+                <Image src={Assets.RatingStarColored} alt="rating" className="w-4 h-4" />
+                <Image src={Assets.RatingStarColored} alt="rating" className="w-4 h-4" />
+                <Image src={Assets.RatingStar} alt="rating" className="w-4 h-4" />
               </div>
 
               <div className="w-1/5 flex ml-16 space-x-8 items-center">
                 <div className="flex gap-0.5 flex-col items-center">
-                  <Image src={Assets.LeLove} alt="icons" />
+                  <Image src={Assets.LeLove} alt="icons" className="w-[18px] h-[18px]" />
                   <span className="text-white font-normal text-xs">{likes}</span>
                 </div>
-                <Image src={Assets.LeHam} alt="icons" />
-                <Image src={Assets.LePlus} alt="icons" />
-                <Image src={Assets.LeShare} alt="icons" />
-                <Image src={Assets.LeDownload} alt="icons" />
+                <Image src={Assets.LeHam} alt="icons" className="w-[18px] h-[18px]" />
+                <Image src={Assets.LePlus} alt="icons" className="w-[18px] h-[18px]" />
+                <Image src={Assets.LeShare} alt="icons" className="w-[18px] h-[18px]" />
+                <Image src={Assets.LeDownload} alt="icons" className="w-[18px] h-[18px]" />
               </div>
               
             </div>

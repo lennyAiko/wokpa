@@ -16,7 +16,7 @@ const PopularCard: React.FC<PopularCardProps> = ({posterImg, title, author, subI
     return (
         <>
             <div className="bg-[#30303080] shrink-0 rounded-[3px] w-[220px] shadow-md">
-                <Image src={posterImg} alt={`${author} image`} />
+                <Image src={posterImg} alt={`${author} image`} className="p-3 rounded-3xl object-cover" />
 
                 <h3 className="font-semibold text-lg text-white px-3 truncate">{title}</h3>
 

@@ -10,7 +10,7 @@ export default function SideNav () {
 
             <div className='lg:mx-8 md:mx-6 mx-6 my-4'>
                 <Link href="/">
-                    <Image src={Assets.WokpaLogo} alt="wokpa logo" />
+                    <Image src={Assets.WokpaLogo} alt="wokpa logo" className='w-[110px] h-[55px]' />
                 </Link>
             </div>
 
@@ -24,14 +24,14 @@ export default function SideNav () {
 
                 <div className="flex flex-row items-center space-x-3 ml-8 mt-3">
                     <h3 className='font-bold text-lg text-white'>Your Library </h3>
-                    <Image src={Assets.Down} alt="down" />
+                    <Image src={Assets.Down} alt="down" className='w-[10px] h-[6px]' />
                 </div>
 
                 <div className='flex flex-row items-center md:space-x-6 lg:space-x-12 ml-8 my-3 space-x-6'>
 
-                    <Image src={Assets.SLove} alt="love" />
-                    <Image src={Assets.SHam} alt="ham" />
-                    <Image src={Assets.SPlus} alt="plus" />
+                    <Image src={Assets.SLove} alt="love" className="w-[18px] h-[18px]" />
+                    <Image src={Assets.SHam} alt="ham" className="w-[18px] h-[18px]" />
+                    <Image src={Assets.SPlus} alt="plus" className="w-[30px] h-[30px]" />
 
                 </div>
 
