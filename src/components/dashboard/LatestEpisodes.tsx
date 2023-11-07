@@ -1,5 +1,7 @@
+import Image from "next/image"
 import {TwoDigits} from "@/utils/extras"
 import LatestEpisodesList from "./LatestEpisodesList"
+import Assets from "@/assets"
 
 interface LatestEpisodesType {
     number: number
@@ -28,22 +30,22 @@ const LatestEpisodes: React.FC<LatestEpisodesType> = ({number, title, author, da
               />
 
               <div className="w-1/5 flex gap-1 items-center">
-                <img src="/dashboard-main/rating-star-colored.svg" alt="rating" />
-                <img src="/dashboard-main/rating-star-colored.svg" alt="rating" />
-                <img src="/dashboard-main/rating-star-colored.svg" alt="rating" />
-                <img src="/dashboard-main/rating-star-colored.svg" alt="rating" />
-                <img src="/dashboard-main/rating-star.svg" alt="rating" />
+                <Image src={Assets.RatingStarColored} alt="rating" />
+                <Image src={Assets.RatingStarColored} alt="rating" />
+                <Image src={Assets.RatingStarColored} alt="rating" />
+                <Image src={Assets.RatingStarColored} alt="rating" />
+                <Image src={Assets.RatingStar} alt="rating" />
               </div>
 
               <div className="w-1/5 flex ml-16 space-x-8 items-center">
                 <div className="flex gap-0.5 flex-col items-center">
-                  <img src="/dashboard-main/le-love.svg" alt="icons" />
+                  <Image src={Assets.LeLove} alt="icons" />
                   <span className="text-white font-normal text-xs">{likes}</span>
                 </div>
-                <img src="/dashboard-main/le-ham.svg" alt="icons" />
-                <img src="/dashboard-main/le-plus.svg" alt="icons" />
-                <img src="/dashboard-main/le-share.svg" alt="icons" />
-                <img src="/dashboard-main/le-download.svg" alt="icons" />
+                <Image src={Assets.LeHam} alt="icons" />
+                <Image src={Assets.LePlus} alt="icons" />
+                <Image src={Assets.LeShare} alt="icons" />
+                <Image src={Assets.LeDownload} alt="icons" />
               </div>
               
             </div>

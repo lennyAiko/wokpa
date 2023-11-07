@@ -1,109 +1,111 @@
-
 /* 
 * This file contains all the data to be simulated or automated
 */
+
+import Assets from "@/assets"
+
 export const NavData = [
 
     // slice(0,4)
-    {name: "Discover", img: "/sidenav/discover.svg", link: "/"},
-    {name: "Top 50 podscasts", img: "/sidenav/top-50-podcasts.svg", link: "/"},
-    {name:"Categories", img:"/sidenav/categories.svg", link: "/"},
-    {name:"Add your podcast", img:"/sidenav/add-your-podcast.svg", link: "/"},
+    {name: "Discover", img: Assets.Discover, link: "/"},
+    {name: "Top 50 podscasts", img: Assets.Top50, link: "/"},
+    {name:"Categories", img: Assets.Categories, link: "/"},
+    {name:"Add your podcast", img: Assets.AddPodcast, link: "/"},
 
     // slice(4,7)
-    {name:"Your playlist", img:"/sidenav/your-playlist.svg", link: "/"},
-    {name:"Recently Played", img:"/sidenav/recently-played.svg", link: "/"},
-    {name:"Subscription & Hosts", img:"/sidenav/s&h.svg", link: "/"},
+    {name:"Your playlist", img: Assets.YourPlaylist, link: "/"},
+    {name:"Recently Played", img: Assets.RecentlyPlayed, link: "/"},
+    {name:"Subscription & Hosts", img: Assets.SH, link: "/"},
     
     // slice(7, .length)
-    {name:"Wokpa for podcasters", img:"/sidenav/wokpa-podcasters.svg", link: "/"},
-    {name:"Wokpa for advertisers", img:"/sidenav/wokpa-advertisers.svg", link: "/"},
-    {name:"Read our blogs", img:"/sidenav/read-blog.svg", link: "/"},
+    {name:"Wokpa for podcasters", img: Assets.WokpaPodcasters, link: "/"},
+    {name:"Wokpa for advertisers", img: Assets.WokpaAdvertisers, link: "/"},
+    {name:"Read our blogs", img: Assets.ReadBlog, link: "/"},
 ]
 
 export const TopPodcastsData = [
     {
-        img: "/dashboard-main/marcmaron.svg",
+        img: Assets.MarcMaron,
         title: "WTF",
         author: "Marc Maron",
-        categoryImage: "/dashboard-main/category.svg",
+        categoryImage: Assets.Category,
         category: "Entertainment"
     },
     {
-        img: "/dashboard-main/joerogan.svg",
+        img: Assets.JoeR,
         title: "The Joe Rogan Experience",
         author: "Joe Rogan",
-        categoryImage: "/dashboard-main/category.svg",
+        categoryImage: Assets.Category,
         category: "Entertainment"
     },    
     {
-        img: "/dashboard-main/joerogan.svg",
+        img: Assets.JoeR,
         title: "How Did Things Get",
         author: "Mike & May",
-        categoryImage: "/dashboard-main/category.svg",
+        categoryImage: Assets.Category,
         category: "Entertainment"
     },
     {
-        img: "/dashboard-main/marcmaron.svg",
+        img: Assets.MarcMaron,
         title: "WTF",
         author: "Marc Maron",
-        categoryImage: "/dashboard-main/category.svg",
+        categoryImage: Assets.Category,
         category: "Entertainment"
     },
     {
-        img: "/dashboard-main/marcmaron.svg",
+        img: Assets.MarcMaron,
         title: "WTF",
         author: "Marc Maron",
-        categoryImage: "/dashboard-main/category.svg",
+        categoryImage: Assets.Category,
         category: "Entertainment"
     },    
     {
-        img: "/dashboard-main/marcmaron.svg",
+        img: Assets.MarcMaron,
         title: "WTF",
         author: "Marc Maron",
-        categoryImage: "/dashboard-main/category.svg",
+        categoryImage: Assets.Category,
         category: "Entertainment"
     }
 ]
 
 export const TopCategoriesData = [
     {
-        img: "/dashboard-main/comedy.svg",
+        img: Assets.Comedy,
         name: "Comedy",
         color: "text-yellow-400"
     },
     {
-        img: "/dashboard-main/h&f.svg",
+        img: Assets.HF,
         name: "Health & Fitness",
         color: "text-blue-400"
     },    
     {
-        img: "/dashboard-main/love.svg",
+        img: Assets.Love,
         name: "Love & Romance",
         color: "text-red-400"
     },
     {
-        img: "dashboard-main/education.svg",
+        img: Assets.Education,
         name: "Education",
         color: "text-blue-300"
     },       
     {
-        img: "dashboard-main/religion.svg",
+        img: Assets.Religion,
         name: "Religion",
         color: "text-blue-300"
     },
     {
-        img: "dashboard-main/music.svg",
+        img: Assets.Music,
         name: "Music",
         color: "text-blue-300"
     },   
     {
-        img: "dashboard-main/technology.svg",
+        img: Assets.Technology,
         name: "Technology",
         color: "text-blue-300"
     },   
     {
-        img: "dashboard-main/g&p.svg",
+        img: Assets.GP,
         name: "Government & Politics",
         color: "text-blue-300"
     }
@@ -117,7 +119,7 @@ export const LatestEpisodesData = [
         date: "20 June",
         duration: "23-30 minutes",
         likes: 345,
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },
     {
         number: 2,
@@ -126,7 +128,7 @@ export const LatestEpisodesData = [
         date: "20 June",
         duration: "23-30 minutes",
         likes: 600,
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },
     {
         number: 3,
@@ -135,7 +137,7 @@ export const LatestEpisodesData = [
         date: "20 June",
         duration: "23-30 minutes",
         likes: 500,
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },
     {
         number: 4,
@@ -144,7 +146,7 @@ export const LatestEpisodesData = [
         date: "20 June",
         duration: "23-30 minutes",
         likes: 300,
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },
     {
         number: 5,
@@ -153,7 +155,7 @@ export const LatestEpisodesData = [
         date: "20 June",
         duration: "23-30 minutes",
         likes: 200,
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },    
     {
         number: 6,
@@ -162,7 +164,7 @@ export const LatestEpisodesData = [
         date: "20 June",
         duration: "23-30 minutes",
         likes: 100,
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },
     {
         number: 7,
@@ -171,7 +173,7 @@ export const LatestEpisodesData = [
         date: "20 June",
         duration: "23-30 minutes",
         likes: 150,
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     }
 ]
 
@@ -181,189 +183,189 @@ export const MadeForYouData = [
         author: "Apostle Joshua Suleiman",
         date: "20 June",
         duration: "23-30 minutes",
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },            
     {
         title: "The ministry of prayer and the world.",
         author: "Apostle Joshua Suleiman",
         date: "20 June",
         duration: "23-30 minutes",
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },   
     {
         title: "The ministry of prayer and the world.",
         author: "Apostle Joshua Suleiman",
         date: "20 June",
         duration: "23-30 minutes",
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },   
     {
         title: "The ministry of prayer and the world.",
         author: "Apostle Joshua Suleiman",
         date: "20 June",
         duration: "23-30 minutes",
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },   
     {
         title: "The ministry of prayer and the world.",
         author: "Apostle Joshua Suleiman",
         date: "20 June",
         duration: "23-30 minutes",
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },   
     {
         title: "The ministry of prayer and the world.",
         author: "Apostle Joshua Suleiman",
         date: "20 June",
         duration: "23-30 minutes",
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },   
     {
         title: "The ministry of prayer and the world.",
         author: "Apostle Joshua Suleiman",
         date: "20 June",
         duration: "23-30 minutes",
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },   
     {
         title: "The ministry of prayer and the world.",
         author: "Apostle Joshua Suleiman",
         date: "20 June",
         duration: "23-30 minutes",
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },   
     {
         title: "The ministry of prayer and the world.",
         author: "Apostle Joshua Suleiman",
         date: "20 June",
         duration: "23-30 minutes",
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },   
     {
         title: "The ministry of prayer and the world.",
         author: "Apostle Joshua Suleiman",
         date: "20 June",
         duration: "23-30 minutes",
-        img: "/dashboard-main/hdtgm.svg"
+        img: Assets.HDTGM
     },
 ]
 
 export const PopularCardData = [
     {
         title: "WTF",
-        posterImg: "/dashboard-main/marcmaron.svg",
+        posterImg: Assets.MarcMaron,
         author: "Marc Maron",
-        subImg1: "/dashboard-main/joe.svg",
-        subImg2: "/dashboard-main/marcmaron.svg",
-        subImg3: "/dashboard-main/marcmaron.svg",
+        subImg1: Assets.Joe,
+        subImg2: Assets.MarcMaron,
+        subImg3: Assets.MarcMaron,
         subscribers: 620
     },               
     {
         title: "WTF",
-        posterImg: "/dashboard-main/marcmaron.svg",
+        posterImg: Assets.MarcMaron,
         author: "Marc Maron",
-        subImg1: "/dashboard-main/joe.svg",
-        subImg2: "/dashboard-main/marcmaron.svg",
-        subImg3: "/dashboard-main/marcmaron.svg",
+        subImg1: Assets.Joe,
+        subImg2: Assets.MarcMaron,
+        subImg3: Assets.MarcMaron,
         subscribers: 6200
     },   
     {
         title: "WTF",
-        posterImg: "/dashboard-main/marcmaron.svg",
+        posterImg: Assets.MarcMaron,
         author: "Marc Maron",
-        subImg1: "/dashboard-main/joe.svg",
-        subImg2: "/dashboard-main/marcmaron.svg",
-        subImg3: "/dashboard-main/marcmaron.svg",
+        subImg1: Assets.Joe,
+        subImg2: Assets.MarcMaron,
+        subImg3: Assets.MarcMaron,
         subscribers: 62000
     },   
     {
         title: "WTF",
-        posterImg: "/dashboard-main/marcmaron.svg",
+        posterImg: Assets.MarcMaron,
         author: "Marc Maron",
-        subImg1: "/dashboard-main/marcmaron.svg",
-        subImg2: "/dashboard-main/marcmaron.svg",
-        subImg3: "/dashboard-main/marcmaron.svg",
+        subImg1: Assets.MarcMaron,
+        subImg2: Assets.MarcMaron,
+        subImg3: Assets.MarcMaron,
         subscribers: 620000
     },    
     {
         title: "WTF",
-        posterImg: "/dashboard-main/marcmaron.svg",
+        posterImg: Assets.MarcMaron,
         author: "Marc Maron",
-        subImg1: "/dashboard-main/marcmaron.svg",
-        subImg2: "/dashboard-main/marcmaron.svg",
-        subImg3: "/dashboard-main/marcmaron.svg",
+        subImg1: Assets.MarcMaron,
+        subImg2: Assets.MarcMaron,
+        subImg3: Assets.MarcMaron,
         subscribers: 6200000
     },   {
         title: "WTF",
-        posterImg: "/dashboard-main/marcmaron.svg",
+        posterImg: Assets.MarcMaron,
         author: "Marc Maron",
-        subImg1: "/dashboard-main/marcmaron.svg",
-        subImg2: "/dashboard-main/marcmaron.svg",
-        subImg3: "/dashboard-main/marcmaron.svg",
+        subImg1: Assets.MarcMaron,
+        subImg2: Assets.MarcMaron,
+        subImg3: Assets.MarcMaron,
         subscribers: 62000000
     },   {
         title: "WTF",
-        posterImg: "/dashboard-main/marcmaron.svg",
+        posterImg: Assets.MarcMaron,
         author: "Marc Maron",
-        subImg1: "/dashboard-main/marcmaron.svg",
-        subImg2: "/dashboard-main/marcmaron.svg",
-        subImg3: "/dashboard-main/marcmaron.svg",
+        subImg1: Assets.MarcMaron,
+        subImg2: Assets.MarcMaron,
+        subImg3: Assets.MarcMaron,
         subscribers: 62000000
     },   {
         title: "WTF",
-        posterImg: "/dashboard-main/marcmaron.svg",
+        posterImg: Assets.MarcMaron,
         author: "Marc Maron",
-        subImg1: "/dashboard-main/marcmaron.svg",
-        subImg2: "/dashboard-main/marcmaron.svg",
-        subImg3: "/dashboard-main/marcmaron.svg",
+        subImg1: Assets.MarcMaron,
+        subImg2: Assets.MarcMaron,
+        subImg3: Assets.MarcMaron,
         subscribers: 620
     },   {
         title: "WTF",
-        posterImg: "/dashboard-main/marcmaron.svg",
+        posterImg: Assets.MarcMaron,
         author: "Marc Maron",
-        subImg1: "/dashboard-main/marcmaron.svg",
-        subImg2: "/dashboard-main/marcmaron.svg",
-        subImg3: "/dashboard-main/marcmaron.svg",
+        subImg1: Assets.MarcMaron,
+        subImg2: Assets.MarcMaron,
+        subImg3: Assets.MarcMaron,
         subscribers: 620
     },   {
         title: "WTF",
-        posterImg: "/dashboard-main/marcmaron.svg",
+        posterImg: Assets.MarcMaron,
         author: "Marc Maron",
-        subImg1: "/dashboard-main/marcmaron.svg",
-        subImg2: "/dashboard-main/marcmaron.svg",
-        subImg3: "/dashboard-main/marcmaron.svg",
+        subImg1: Assets.MarcMaron,
+        subImg2: Assets.MarcMaron,
+        subImg3: Assets.MarcMaron,
         subscribers: 620
     },   {
         title: "WTF",
-        posterImg: "/dashboard-main/marcmaron.svg",
+        posterImg: Assets.MarcMaron,
         author: "Marc Maron",
-        subImg1: "/dashboard-main/marcmaron.svg",
-        subImg2: "/dashboard-main/marcmaron.svg",
-        subImg3: "/dashboard-main/marcmaron.svg",
+        subImg1: Assets.MarcMaron,
+        subImg2: Assets.MarcMaron,
+        subImg3: Assets.MarcMaron,
         subscribers: 620
     },   {
         title: "WTF",
-        posterImg: "/dashboard-main/marcmaron.svg",
+        posterImg: Assets.MarcMaron,
         author: "Marc Maron",
-        subImg1: "/dashboard-main/marcmaron.svg",
-        subImg2: "/dashboard-main/marcmaron.svg",
-        subImg3: "/dashboard-main/marcmaron.svg",
+        subImg1: Assets.MarcMaron,
+        subImg2: Assets.MarcMaron,
+        subImg3: Assets.MarcMaron,
         subscribers: 62000
     },   {
         title: "WTF",
-        posterImg: "/dashboard-main/marcmaron.svg",
+        posterImg: Assets.MarcMaron,
         author: "Marc Maron",
-        subImg1: "/dashboard-main/marcmaron.svg",
-        subImg2: "/dashboard-main/marcmaron.svg",
-        subImg3: "/dashboard-main/marcmaron.svg",
+        subImg1: Assets.MarcMaron,
+        subImg2: Assets.MarcMaron,
+        subImg3: Assets.MarcMaron,
         subscribers: 62000
     },   {
         title: "WTF",
-        posterImg: "/dashboard-main/marcmaron.svg",
+        posterImg: Assets.MarcMaron,
         author: "Marc Maron",
-        subImg1: "/dashboard-main/marcmaron.svg",
-        subImg2: "/dashboard-main/marcmaron.svg",
-        subImg3: "/dashboard-main/marcmaron.svg",
+        subImg1: Assets.MarcMaron,
+        subImg2: Assets.MarcMaron,
+        subImg3: Assets.MarcMaron,
         subscribers: 620000
     },
 ]
@@ -371,63 +373,63 @@ export const PopularCardData = [
 export const HostSuggestionData = [
     {
         title: "Mark Bean",
-        img: "/dashboard-main/joe.svg",
+        img: Assets.Joe,
         podcastName: "The Joe Rogan Experience"
     },                 {
         title: "Mark Bean",
-        img: "/dashboard-main/joe.svg",
+        img: Assets.Joe,
         podcastName: "The Joe Rogan Experience"
     },   {
         title: "Mark Bean",
-        img: "/dashboard-main/joe.svg",
+        img: Assets.Joe,
         podcastName: "The Joe Rogan Experience"
     },   {
         title: "Mark Bean",
-        img: "/dashboard-main/joe.svg",
+        img: Assets.Joe,
         podcastName: "The Joe Rogan Experience"
     },   {
         title: "Mark Bean",
-        img: "/dashboard-main/joe.svg",
+        img: Assets.Joe,
         podcastName: "The Joe Rogan Experience"
     },   {
         title: "Mark Bean",
-        img: "/dashboard-main/joe.svg",
+        img: Assets.Joe,
         podcastName: "The Joe Rogan Experience"
     },   {
         title: "Mark Bean",
-        img: "/dashboard-main/joe.svg",
+        img: Assets.Joe,
         podcastName: "The Joe Rogan Experience"
     },   {
         title: "Mark Bean",
-        img: "/dashboard-main/joe.svg",
+        img: Assets.Joe,
         podcastName: "The Joe Rogan Experience"
     },   {
         title: "Mark Bean",
-        img: "/dashboard-main/joe.svg",
+        img: Assets.Joe,
         podcastName: "The Joe Rogan Experience"
     },   {
         title: "Mark Bean",
-        img: "/dashboard-main/joe.svg",
+        img: Assets.Joe,
         podcastName: "The Joe Rogan Experience"
     },   {
         title: "Mark Bean",
-        img: "/dashboard-main/joe.svg",
+        img: Assets.Joe,
         podcastName: "The Joe Rogan Experience"
     },   {
         title: "Mark Bean",
-        img: "/dashboard-main/joe.svg",
+        img: Assets.Joe,
         podcastName: "The Joe Rogan Experience"
     },   {
         title: "Mark Bean",
-        img: "/dashboard-main/joe.svg",
+        img: Assets.Joe,
         podcastName: "The Joe Rogan Experience"
     },   {
         title: "Mark Bean",
-        img: "/dashboard-main/joe.svg",
+        img: Assets.Joe,
         podcastName: "The Joe Rogan Experience"
     },   {
         title: "Mark Bean",
-        img: "/dashboard-main/joe.svg",
+        img: Assets.Joe,
         podcastName: "The Joe Rogan Experience"
     },
 ]
@@ -436,43 +438,43 @@ export const OtherListenersData = [
     {
         title: "Sarah Leah",
         date: "May 4, 2022",
-        img: "/dashboard-main/joe.svg"
+        img: Assets.Joe
     },    {
         title: "Sarah Leah",
         date: "May 4, 2022",
-        img: "/dashboard-main/joe.svg"
+        img: Assets.Joe
     },   {
         title: "Sarah Leah",
         date: "May 4, 2022",
-        img: "/dashboard-main/joe.svg"
+        img: Assets.Joe
     },   {
         title: "Sarah Leah",
         date: "May 4, 2022",
-        img: "/dashboard-main/joe.svg"
+        img: Assets.Joe
     },   {
         title: "Sarah Leah",
         date: "May 4, 2022",
-        img: "/dashboard-main/joe.svg"
+        img: Assets.Joe
     },   {
         title: "Sarah Leah",
         date: "May 4, 2022",
-        img: "/dashboard-main/joe.svg"
+        img: Assets.Joe
     },   {
         title: "Sarah Leah",
         date: "May 4, 2022",
-        img: "/dashboard-main/joe.svg"
+        img: Assets.Joe
     },   {
         title: "Sarah Leah",
         date: "May 4, 2022",
-        img: "/dashboard-main/joe.svg"
+        img: Assets.Joe
     },   {
         title: "Sarah Leah",
         date: "May 4, 2022",
-        img: "/dashboard-main/joe.svg"
+        img: Assets.Joe
     },{
         title: "Sarah Leah",
         date: "May 4, 2022",
-        img: "/dashboard-main/joe.svg"
+        img: Assets.Joe
     }
 ]
 

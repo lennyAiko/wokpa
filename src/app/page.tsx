@@ -5,13 +5,17 @@ import LatestEpisodes from "@/components/dashboard/LatestEpisodes"
 import LatestEpisodesList from "@/components/dashboard/LatestEpisodesList"
 import PopularCard from "@/components/dashboard/PopularCard"
 
+import Image from "next/image"
+
+import Assets from "@/assets"
+
 export default function Home() {
 
   return (
     <main className='flex-1 bg-[#212121] flex-col'>
 
       <div className="flex flex-1 items-center gap-2 mx-6 mt-6 mb-2">
-        <img src="/dashboard-main/star.svg" alt="star" />
+        <Image src={Assets.Star} alt="star" className="w-6 h-6"/>
         <span className="font-bold text-2xl text-white">Pick of the week</span>
       </div>
 
@@ -19,11 +23,11 @@ export default function Home() {
 
         <div className="ml-5 relative w-1/3 mr-3">
 
-          <img src="/dashboard-main/fs.svg" alt="pick-of-the-week" />
+          <Image src={Assets.Fs} alt="pick-of-the-week" className="w-[528px] h-[377px]" />
 
           <span className="flex flex-1 items-center gap-1 rounded-3xl bg-[#7B61FF] w-fit px-4 py-2 absolute lg:right-10 lg:top-[80%]">
             <span className="font-bold text-sm text-white">Listen now</span>
-            <img src="/dashboard-main/play-circle.svg" alt="play-circle" />
+            <Image src={Assets.PlayCircle} alt="play-circle" className="w-6 h-6" />
           </span>
 
         </div>
@@ -62,7 +66,7 @@ export default function Home() {
       <div className="bg-[#30303080] m-6">
         
         <div className="flex items-center">
-          <img src="/dashboard-main/topcategories.svg" alt="top categories" className="-mr-3" />
+          <Image src={Assets.TopCategories} alt="top categories" className="-mr-3 w-[72px] h-[72px]" />
           <span className="font-bold text-2xl text-white">Top Categories</span>
         </div>
 
@@ -96,14 +100,14 @@ export default function Home() {
           <div className="flex justify-between">
             <div className="flex flex-col items-end">
               <div className="flex items-center -mb-3">
-                <img src="/dashboard-main/topcategories.svg" alt="latest episodes" className="-mr-3" />
+                <Image src={Assets.TopCategories} alt="latest episodes" className="-mr-3 w-[72px] h-[72px]" />
                 <span className="text-white font-bold text-[28px]">Latest episodes</span>
               </div>
               <span className="text-[#C3C3C3] font-medium text-lg">#Fresh out of the studio!</span>
             </div>
             <div className="flex items-center relative mr-6">
               <input type="text" placeholder="Filter by category" className="px-4 py-3 w-fit h-fit bg-[#272626] border border-[#DCDCDC] rounded-xl" />
-              <img src="/dashboard-main/down.svg" alt="down" className="absolute right-5" />
+              <Image src={Assets.Down} alt="down" className="absolute right-5 w-[14px] h-2" />
             </div>
           </div>
 
@@ -161,7 +165,7 @@ export default function Home() {
 
         <div className="flex flex-col items-start">
           <div className="flex items-center -mb-3">
-            <img src="/dashboard-main/topcategories.svg" alt="latest episodes" className="-mr-3" />
+            <Image src={Assets.TopCategories} alt="latest episodes" className="-mr-3 w-[72px] h-[72px]" />
             <span className="text-white font-bold text-[28px]">Popular & Trending Podcasts</span>
           </div>
           <span className="text-[#C3C3C3] font-medium text-lg ml-16">#Community's choice</span>
@@ -190,7 +194,7 @@ export default function Home() {
 
         <div className="flex flex-col items-start">
           <div className="flex items-center -mb-3">
-            <img src="/dashboard-main/topcategories.svg" alt="latest episodes" className="-mr-3" />
+            <Image src={Assets.TopCategories} alt="latest episodes" className="-mr-3 w-[72px] h-[72px]" />
             <span className="text-white font-bold text-[28px]">Podcast host suggestions</span>
           </div>
           <span className="text-[#C3C3C3] font-medium text-lg ml-16">#Editor's choice</span>
@@ -200,7 +204,7 @@ export default function Home() {
           {
             HostSuggestionData.map(data => (
               <div className="flex flex-col rounded-[3px] shrink-0 p-3 bg-white w-[230px] h-[295px] items-center">
-                <img src={data.img} alt="" className="rounded-full w-[159px] h-[159px] object-cover" />
+                <Image src={data.img} alt="" className="rounded-full w-[159px] h-[159px] object-cover" />
 
                 <span className="font-semibold text-lg my-1 text-[#282828] truncate mx-3">{data.title}</span>
 
@@ -220,7 +224,7 @@ export default function Home() {
 
         <div className="flex flex-col items-start">
           <div className="flex items-center -mb-3">
-            <img src="/dashboard-main/topcategories.svg" alt="latest episodes" className="-mr-3" />
+            <Image src={Assets.TopCategories} alt="latest episodes" className="-mr-3 w-[72px] h-[72px]" />
             <span className="text-white font-bold text-[28px]">Discover other listeners</span>
           </div>
           <span className="text-[#C3C3C3] font-medium text-lg ml-16">We are building a community of podcast lovers</span>
@@ -231,7 +235,7 @@ export default function Home() {
           {
             OtherListenersData.map(data => (
               <div className="flex flex-col rounded-[3px] shrink-0 p-3 bg-white w-[230px] h-[295px] items-center">
-                <img src={data.img} alt="" className="rounded-full w-[159px] h-[159px] object-cover mx-auto" />
+                <Image src={data.img} alt="" className="rounded-full w-[159px] h-[159px] object-cover mx-auto" />
 
                 <span className="font-semibold text-lg my-1 text-[#282828] truncate mx-3">{data.title}</span>
 
@@ -253,7 +257,7 @@ export default function Home() {
 
         <div className="flex flex-col items-start">
           <div className="flex items-center -mb-3">
-            <img src="/dashboard-main/topcategories.svg" alt="latest episodes" className="-mr-3" />
+            <Image src={Assets.TopCategories} alt="latest episodes" className="-mr-3 w-[72px] h-[72px]" />
             <span className="text-white font-bold text-[28px]">Search by popular keywords</span>
           </div>
         </div>
