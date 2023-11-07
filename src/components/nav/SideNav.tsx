@@ -18,7 +18,7 @@ export default function SideNav () {
 
                 {
                     NavData.slice(0, 4).map((data) => (
-                        <SideNavLinks name={data.name} img={data.img} link={data.link} />
+                        <SideNavLinks name={data.name} img={data.img} link={data.link} key={data.name} />
                     ))
                 }
 
@@ -37,7 +37,7 @@ export default function SideNav () {
 
                 {
                     NavData.slice(4, 7).map((data) => (
-                        <SideNavLinks name={data.name} img={data.img} link={data.link} />
+                        <SideNavLinks name={data.name} img={data.img} link={data.link} key={data.name} />
                     ))
                 }
 

@@ -8,60 +8,14 @@ import PopularCard from "@/components/dashboard/PopularCard"
 import Image from "next/image"
 
 import Assets from "@/assets"
+import TopPodcasts from "@/components/dashboard/TopPodcasts"
 
 export default function Home() {
 
   return (
     <main className='flex-1 bg-[#212121] flex-col'>
 
-      <div className="flex flex-1 items-center gap-2 mx-6 mt-6 mb-2">
-        <Image src={Assets.Star} alt="star" className="w-6 h-6"/>
-        <span className="font-bold text-2xl text-white">Pick of the week</span>
-      </div>
-
-      <div className="flex">
-
-        <div className="ml-5 relative w-2/4">
-
-          <Image src={Assets.Fs} alt="pick-of-the-week" className="w-[628px] h-[477px]" />
-
-          <span className="flex flex-1 items-center gap-1 rounded-3xl bg-[#7B61FF] w-fit px-4 py-2 absolute lg:right-10 lg:top-[80%]">
-            <span className="font-bold text-sm text-white">Listen now</span>
-            <Image src={Assets.PlayCircle} alt="play-circle" className="w-6 h-6" />
-          </span>
-
-        </div>
-
-        <div className="w-2/4 pr-6 mt-4">
-
-          <div className="flex justify-between">
-            
-            <span className="font-bold text-2xl text-white">Top podcasts</span>
-            <span className="text-[#1EAEA3] font-bold text-sm">See all</span>
-
-          </div>
-
-          <span className="text-gray-500 my-4"><span className="text-white">&bull;</span>&bull;&bull;&bull;&bull;&bull;&bull;</span>
-
-          <div className="overflow-x-scroll flex gap-3">
-            {
-              TopPodcastsData.map((data) => (
-
-                <TopCard 
-                  img={data.img}
-                  title={data.title}
-                  category={data.category}
-                  categoryImage={data.categoryImage}
-                  author={data.author}
-                />
-
-              ))
-            }
-          </div>
-          
-        </div>
-
-      </div>
+     <TopPodcasts /> 
 
       <div className="bg-[#30303080] m-6">
         
@@ -76,7 +30,8 @@ export default function Home() {
 
             {
               TopCategoriesData.map(data => (
-                <TopCategories 
+                <TopCategories
+                  key={data.name} 
                   img={data.img}
                   color={data.color}
                   name={data.name}
@@ -116,6 +71,7 @@ export default function Home() {
             {
               LatestEpisodesData.map(data => (
                 <LatestEpisodes 
+                  key={data.number}
                   number={data.number}
                   title={data.title}
                   author={data.author}
@@ -134,7 +90,7 @@ export default function Home() {
 
           <div className="flex flex-col pt-5 px-5">
             <span className="text-white font-bold text-3xl">Made for you</span>
-            <span className="text-[#C3C3C3] font-medium text-lg">Episodes you don't want to miss out on.</span>
+            <span className="text-[#C3C3C3] font-medium text-lg">Episodes you don&lsquo;t want to miss out on.</span>
           </div>
 
           <span className='h-[1px] bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] my-3 w-full'></span>
@@ -142,8 +98,9 @@ export default function Home() {
             <div className="overflow-y-scroll mb-3">
               {
                 MadeForYouData.map(data => (
-                <div className="flex items-center px-5 mb-1 overflow-y-scroll">
+                <div className="flex items-center px-5 mb-1 overflow-y-scroll" key={data.title}>
                   <LatestEpisodesList
+                    
                     title={data.title}
                     duration={data.duration}
                     author={data.author}
@@ -168,13 +125,14 @@ export default function Home() {
             <Image src={Assets.TopCategories} alt="latest episodes" className="-mr-3 w-[72px] h-[72px]" />
             <span className="text-white font-bold text-[28px]">Popular & Trending Podcasts</span>
           </div>
-          <span className="text-[#C3C3C3] font-medium text-lg ml-16">#Community's choice</span>
+          <span className="text-[#C3C3C3] font-medium text-lg ml-16">#Community&lsquo;s choice</span>
         </div>
 
         <div className="shrink-0 rounded-[3px] shadow-md flex gap-3 overflow-x-scroll m-6">
           {
             PopularCardData.map(data => (
               <PopularCard
+                key={data.title}
                 posterImg={data.posterImg}
                 title={data.title}
                 author={data.author}
@@ -197,13 +155,13 @@ export default function Home() {
             <Image src={Assets.TopCategories} alt="latest episodes" className="-mr-3 w-[72px] h-[72px]" />
             <span className="text-white font-bold text-[28px]">Podcast host suggestions</span>
           </div>
-          <span className="text-[#C3C3C3] font-medium text-lg ml-16">#Editor's choice</span>
+          <span className="text-[#C3C3C3] font-medium text-lg ml-16">#Editor&lsquo;s choice</span>
         </div>
 
         <div className="flex gap-3 items-center m-6 overflow-x-scroll">
           {
             HostSuggestionData.map(data => (
-              <div className="flex flex-col rounded-[3px] shrink-0 p-3 bg-white w-[230px] h-[295px] items-center">
+              <div className="flex flex-col rounded-[3px] shrink-0 p-3 bg-white w-[230px] h-[295px] items-center" key={data.title}>
                 <Image src={data.img} alt="" className="rounded-full w-[159px] h-[159px] object-cover" />
 
                 <span className="font-semibold text-lg my-1 text-[#282828] truncate mx-3">{data.title}</span>
@@ -228,13 +186,13 @@ export default function Home() {
             <span className="text-white font-bold text-[28px]">Discover other listeners</span>
           </div>
           <span className="text-[#C3C3C3] font-medium text-lg ml-16">We are building a community of podcast lovers</span>
-          <span className="text-[#C3C3C3] font-medium text-lg ml-16">#Editor's choice</span>
+          <span className="text-[#C3C3C3] font-medium text-lg ml-16">#suggested for you</span>
         </div>
 
          <div className="flex gap-6 items-center my-6 mx-28 w-[90%] flex-wrap">
           {
             OtherListenersData.map(data => (
-              <div className="flex flex-col rounded-[3px] shrink-0 p-3 bg-white w-[230px] h-[295px] items-center">
+              <div className="flex flex-col rounded-[3px] shrink-0 p-3 bg-white w-[230px] h-[295px] items-center" key={data.title}>
                 <Image src={data.img} alt="" className="rounded-full w-[159px] h-[159px] object-cover mx-auto" />
 
                 <span className="font-semibold text-lg my-1 text-[#282828] truncate mx-3">{data.title}</span>
