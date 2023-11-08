@@ -6,29 +6,29 @@ import TopCard from "./TopCard"
 export default function TopPodcasts () {
     return (
         <>
-            <div className="flex flex-1 items-center gap-2 mx-6 mt-6 mb-2">
-                <Image src={Assets.Star} alt="star" className="w-6 h-6"/>
-                <span className="font-bold text-2xl text-white">Pick of the week</span>
+            <div className="flex flex-1 items-center justify-center sm:justify-normal sm:gap-2 gap-0.5 mx-6 sm:mt-6 mt-4 sm:mb-2">
+                <Image src={Assets.Star} alt="star" className="sm:w-6 sm:h-6 w-4 h-4"/>
+                <span className="font-bold sm:text-2xl text-xl text-white">Pick of the week</span>
             </div>
 
-            <div className="flex">
+            <div className="flex sm:flex-row flex-col">
 
-                <div className="ml-5 relative w-2/4">
+                <div className="sm:ml-5 relative sm:w-2/4 m-3 sm:m-0">
 
-                    <Image src={Assets.Fs} alt="pick-of-the-week" className="w-[628px] h-[477px]" />
+                    <Image src={Assets.Fs} alt="pick-of-the-week" className="sm:w-[628px] sm:h-[477px] w-[408px] h-[257px] -mt-4 object-contain" />
 
-                    <span className="flex flex-1 items-center gap-1 rounded-3xl bg-[#7B61FF] w-fit px-4 py-2 absolute lg:right-10 lg:top-[80%]">
+                    <span className="flex flex-1 items-center gap-1 rounded-3xl bg-[#7B61FF] w-fit px-3 py-2 absolute right-6 bottom-10">
                         <span className="font-bold text-sm text-white">Listen now</span>
                         <Image src={Assets.PlayCircle} alt="play-circle" className="w-6 h-6" />
                     </span>
 
                 </div>
 
-                <div className="w-2/4 pr-6 mt-4">
+                <div className="sm:w-2/4 sm:pr-6 pr-3 sm:mt-4 mx-3 -mt-5">
         
                     <div className="flex justify-between">
                 
-                        <span className="font-bold text-2xl text-white">Top podcasts</span>
+                        <span className="font-bold sm:text-2xl text-xl text-white">Top podcasts</span>
                         <span className="text-[#1EAEA3] font-bold text-sm">See all</span>
 
                     </div>
@@ -40,7 +40,6 @@ export default function TopPodcasts () {
                             TopPodcastsData.map((data) => (
 
                                 <TopCard 
-                                    key={data.title}
                                     img={data.img}
                                     title={data.title}
                                     category={data.category}

@@ -26,13 +26,13 @@ export default function RootLayout({
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}
       />
-      <body className={`${inter.className} flex flex-row w-full flex-auto`}>
+      <body className={`${inter.className} flex-col sm:w-max sm:flex sm:flex-row w-max`}>
         
-        <div className='lg:w-1/5 md:w-1/3 sm:2/3'>
+        <div className='lg:w-1/5 sm:w-1/3'>
           <SideNav />
         </div>
 
-        <div className="lg:w-4/5 md:w-2/3 sm:w-1/3 flex flex-col h-screen">
+        <div className="lg:w-4/5 sm:w-2/3 flex flex-col h-screen">
           
           <Header />
 

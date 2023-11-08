@@ -15,11 +15,11 @@ interface LatestEpisodesType {
 
 const LatestEpisodes: React.FC<LatestEpisodesType> = ({number, title, author, date, duration, likes, img, ...props}) => {
     return (
-        <div className="flex mb-4 gap-4 overflow-y-scroll shrink-0">
+        <div className="flex mb-4 gap-4 overflow-y-scroll">
 
-            <span className="font-medium text-[13px] text-white">{TwoDigits(number)}</span>
+            <span className="font-medium text-[13px] text-white hidden sm:flex">{TwoDigits(number)}</span>
 
-            <div className="flex gap-2 mt-4 -ml-10 items-center justify-between">
+            <div className="flex flex-col sm:flex-row gap-2.5 sm:mt-4 sm:-ml-10 sm:items-center sm:justify-between">
 
               <LatestEpisodesList
                 img={img}
@@ -37,7 +37,7 @@ const LatestEpisodes: React.FC<LatestEpisodesType> = ({number, title, author, da
                 <Image src={Assets.RatingStar} alt="rating" className="w-4 h-4" />
               </div>
 
-              <div className="w-1/5 flex ml-16 space-x-8 items-center">
+              <div className="w-1/5 flex sm:ml-16 space-x-8 items-center">
                 <div className="flex gap-0.5 flex-col items-center">
                   <Image src={Assets.LeLove} alt="icons" className="w-[18px] h-[18px]" />
                   <span className="text-white font-normal text-xs">{likes}</span>

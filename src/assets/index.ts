@@ -38,6 +38,8 @@ import WokpaLogo from './sidenav/wokpalogo.svg'
 import SLove from './sidenav/love.svg'
 import SHam from './sidenav/ham.svg'
 import SPlus from './sidenav/plus.svg'
+import Close from './sidenav/close.svg'
+import Menu from './sidenav/menu.svg'
 
 import User from './header/user.svg'
 import Mobile from './header/mobile.svg'
@@ -45,7 +47,7 @@ import Search from './header/search.svg'
 
 
 const Assets = {
-    Star, Fs, PlayCircle, TopCategories, Down, Discover, Top50, Categories, AddPodcast, YourPlaylist, RecentlyPlayed, SH, WokpaPodcasters, WokpaAdvertisers, ReadBlog, Joe, MarcMaron, JoeR, Category, HDTGM, Comedy, HF, Love, Education, Religion, Music, Technology, GP, RatingStarColored, RatingStar, LeDownload, LeHam, LeLove, LePlus, LeShare, WokpaLogo, SLove, SHam, SPlus, User, Mobile, Search
+    Star, Fs, PlayCircle, TopCategories, Down, Discover, Top50, Categories, AddPodcast, YourPlaylist, RecentlyPlayed, SH, WokpaPodcasters, WokpaAdvertisers, ReadBlog, Joe, MarcMaron, JoeR, Category, HDTGM, Comedy, HF, Love, Education, Religion, Music, Technology, GP, RatingStarColored, RatingStar, LeDownload, LeHam, LeLove, LePlus, LeShare, WokpaLogo, SLove, SHam, SPlus, User, Mobile, Search, Close, Menu
 }
 
 export default Assets
