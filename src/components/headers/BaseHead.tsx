@@ -7,11 +7,11 @@ interface BaseHeadProps {
 
 const BaseHead: React.FC<BaseHeadProps> = ({title, description, ...props}) => {
     return (
-        <head>
+        <Head>
             <meta name="description" content={description} />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <title>{ title }</title>
-        </head>
+        </Head>
     )
 }
 

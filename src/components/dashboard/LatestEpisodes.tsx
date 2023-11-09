@@ -1,5 +1,7 @@
-import TwoDigits from "@/utils/extras"
+import Image from "next/image"
+import {TwoDigits} from "@/utils/extras"
 import LatestEpisodesList from "./LatestEpisodesList"
+import Assets from "@/assets"
 
 interface LatestEpisodesType {
     number: number
@@ -13,11 +15,11 @@ interface LatestEpisodesType {
 
 const LatestEpisodes: React.FC<LatestEpisodesType> = ({number, title, author, date, duration, likes, img, ...props}) => {
     return (
-        <div className="flex mb-4 gap-4 overflow-y-scroll">
+        <div className="flex mb-4 gap-4 overflow-y-scroll overflow-hidden">
 
-            <span className="font-medium text-[13px] text-white">{TwoDigits(number)}</span>
+            <span className="font-medium text-[13px] text-white hidden sm:flex">{TwoDigits(number)}</span>
 
-            <div className="flex gap-2 mt-4 -ml-10 items-center justify-between">
+            <div className="flex flex-col sm:flex-row gap-2.5 sm:mt-4 sm:-ml-10 sm:items-center sm:justify-between w-full">
 
               <LatestEpisodesList
                 img={img}
@@ -28,22 +30,22 @@ const LatestEpisodes: React.FC<LatestEpisodesType> = ({number, title, author, da
               />
 
               <div className="w-1/5 flex gap-1 items-center">
-                <img src="/dashboard-main/rating-star-colored.svg" alt="rating" />
-                <img src="/dashboard-main/rating-star-colored.svg" alt="rating" />
-                <img src="/dashboard-main/rating-star-colored.svg" alt="rating" />
-                <img src="/dashboard-main/rating-star-colored.svg" alt="rating" />
-                <img src="/dashboard-main/rating-star.svg" alt="rating" />
+                <Image src={Assets.RatingStarColored} alt="rating" className="w-4 h-4" />
+                <Image src={Assets.RatingStarColored} alt="rating" className="w-4 h-4" />
+                <Image src={Assets.RatingStarColored} alt="rating" className="w-4 h-4" />
+                <Image src={Assets.RatingStarColored} alt="rating" className="w-4 h-4" />
+                <Image src={Assets.RatingStar} alt="rating" className="w-4 h-4" />
               </div>
 
-              <div className="w-1/5 flex ml-16 space-x-8 items-center">
+              <div className="w-1/5 flex sm:ml-16 space-x-8 items-center">
                 <div className="flex gap-0.5 flex-col items-center">
-                  <img src="/dashboard-main/le-love.svg" alt="icons" />
+                  <Image src={Assets.LeLove} alt="icons" className="w-[18px] h-[18px]" />
                   <span className="text-white font-normal text-xs">{likes}</span>
                 </div>
-                <img src="/dashboard-main/le-ham.svg" alt="icons" />
-                <img src="/dashboard-main/le-plus.svg" alt="icons" />
-                <img src="/dashboard-main/le-share.svg" alt="icons" />
-                <img src="/dashboard-main/le-download.svg" alt="icons" />
+                <Image src={Assets.LeHam} alt="icons" className="w-[18px] h-[18px]" />
+                <Image src={Assets.LePlus} alt="icons" className="w-[18px] h-[18px]" />
+                <Image src={Assets.LeShare} alt="icons" className="w-[18px] h-[18px]" />
+                <Image src={Assets.LeDownload} alt="icons" className="w-[18px] h-[18px]" />
               </div>
               
             </div>

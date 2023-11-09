@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 interface LatestEpisodesListType {
   img: string
   title: string
@@ -10,11 +12,11 @@ const LatestEpisodesList: React.FC<LatestEpisodesListType> = ({img, title, durat
 
   return (
     <>
-      <img src={img} alt="podcast image" className="w-[84px] h-[84px] mr-0.5" />
-      <div className="flex flex-col gap-0.5 w-4/5">
-        <span className="font-semibold text-lg text-white truncate">{title}</span>
-        <span className="text-white text-sm font-normal truncate">By: {author}</span>
-        <span className="text-white text-xs font-normal truncate">{date}, {duration}</span>
+      <Image src={img} alt="podcast image" className="w-[84px] h-[84px] sm:mr-0.5" />
+      <div className="flex flex-col gap-0.5 sm:w-4/5 w-full">
+        <span className="font-semibold sm:text-lg text-base text-white truncate">{title}</span>
+        <span className="text-white sm:text-sm text-xs font-normal truncate">By: {author}</span>
+        <span className="text-white sm:text-xs text-[9px] font-normal truncate">{date}, {duration}</span>
       </div>
     </>
   )
