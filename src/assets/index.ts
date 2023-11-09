@@ -1,5 +1,5 @@
 import Star from './dashboard-main/star.svg'
-import Fs from './dashboard-main/fs.svg'
+import Fs from './dashboard-main/franklyspeaking.jpg'
 import PlayCircle from './dashboard-main/play-circle.svg'
 import TopCategories from './dashboard-main/topcategories.svg'
 import Down from './dashboard-main/down.svg'

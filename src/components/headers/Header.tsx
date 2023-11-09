@@ -5,7 +5,7 @@ import Search from "./Search";
 export default function Header() {
     return (
         <>
-            <div className="bg-[#272727] flex-row items-center p-2 sm:flex hidden w-full">
+            <div className="bg-[#272727] flex-row items-center p-2 sm:flex hidden w-screen">
 
                 <Search /> 
 

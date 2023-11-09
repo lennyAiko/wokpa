@@ -26,15 +26,15 @@ export default function RootLayout({
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}
       />
-      <body className={`${inter.className} bg-black`}>
+      <body className={`${inter.className}`}>
         
         <div className="sm:w-max sm:flex sm:flex-row w-full bg-black" role='main'>
           
-          <div className='lg:w-1/5 sm:w-1/3 w-full'>
+          <div className='sm:w-1/4 w-full'>
             <SideNav />
           </div>
           
-          <div className="lg:w-4/5 sm:w-2/3 w-full flex flex-col">
+          <div className="sm:w-3/4 w-full flex flex-col">
           
             <Header />
             
