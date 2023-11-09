@@ -1,14 +1,15 @@
 import Image from "next/image"
 
 interface LatestEpisodesListType {
-  img: string
+  img: any
   title: string
   duration: string
   author: string
   date: string 
+  id: number
 }
 
-const LatestEpisodesList: React.FC<LatestEpisodesListType> = ({img, title, duration, author, date, ...props}) => {
+const LatestEpisodesList: React.FC<LatestEpisodesListType> = ({img, title, duration, author, date, id,  ...props}) => {
 
   return (
     <>

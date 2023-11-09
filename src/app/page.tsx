@@ -42,7 +42,8 @@ export default function Home() {
           <div className="mx-10 mt-8 mb-3 overflow-hidden overflow-y-scroll">
             {
               LatestEpisodesData.map(data => (
-                <LatestEpisodes 
+                <LatestEpisodes key={data.number}
+                  id={data.number}
                   number={data.number}
                   title={data.title}
                   author={data.author}
@@ -69,8 +70,9 @@ export default function Home() {
             <div className="overflow-y-scroll overflow-hidden mb-3 p-1 sm:p-0">
               {
                 MadeForYouData.map(data => (
-                <div className="flex items-center sm:px-5 sm:mb-1 overflow-y-scroll overflow-hidden" key={data.title}>
+                <div className="flex items-center sm:px-5 sm:mb-1 overflow-y-scroll overflow-hidden" key={data.id}>
                   <LatestEpisodesList
+                    id={data.id}
                     title={data.title}
                     duration={data.duration}
                     author={data.author}
@@ -125,7 +127,7 @@ export default function Home() {
         <div className="flex sm:gap-3 gap-2 items-center sm:m-6 m-2.5 overflow-x-scroll overflow-hidden">
           {
             HostSuggestionData.map(data => (
-              <div className="flex flex-col rounded-[3px] shrink-0 p-3 bg-white sm:w-[230px] sm:h-[295px] w-[180px] h-[245px] items-center" key={data.title}>
+              <div className="flex flex-col rounded-[3px] shrink-0 p-3 bg-white sm:w-[230px] sm:h-[295px] w-[180px] h-[245px] items-center" key={data.id}>
                 <Image src={data.img} alt="" className="rounded-full sm:w-[159px] sm:h-[159px] w-[129px] h-[129px] object-cover mx-auto" />
 
                 <span className="font-semibold sm:text-lg text-base my-1 text-[#282828] truncate mx-3">{data.title}</span>
@@ -153,7 +155,7 @@ export default function Home() {
          <div className="flex sm:gap-6 items-center my-6 sm:mx-28 sm:w-[90%] m-2.5 gap-3 overflow-x-scroll overflow-hidden sm:flex-wrap">
           {
             OtherListenersData.map(data => (
-              <div className="flex flex-col rounded-[3px] shrink-0 sm:p-3 p-2 bg-white sm:w-[230px] sm:h-[295px] w-[180px] h-[245px] items-center" key={data.title}>
+              <div className="flex flex-col rounded-[3px] shrink-0 sm:p-3 p-2 bg-white sm:w-[230px] sm:h-[295px] w-[180px] h-[245px] items-center" key={data.id}>
                 <Image src={data.img} alt={data.title} className="rounded-full sm:w-[159px] sm:h-[159px] w-[129px] h-[129px] object-cover mx-auto" />
 
                 <span className="font-semibold sm:text-lg text-base my-1 text-[#282828] truncate mx-3">{data.title}</span>
@@ -181,7 +183,7 @@ export default function Home() {
         <div className="flex sm:gap-3 gap-1.5 sm:m-8 m-2.5 flex-wrap">
           {
             KeywordsData.map(data => (
-              <span className="text-white font-semibold sm:text-base text-sm bg-[#575757] rounded-full sm:px-4 px-2.5 sm:py-2.5 py-2">#{data}</span>
+              <span className="text-white font-semibold sm:text-base text-sm bg-[#575757] rounded-full sm:px-4 px-2.5 sm:py-2.5 py-2" key={data.id}>#{data.name}</span>
             ))
           }
         </div>

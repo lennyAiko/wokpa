@@ -40,6 +40,8 @@ export default function TopPodcasts () {
                             TopPodcastsData.map((data) => (
 
                                 <TopCard 
+                                    key={data.id}
+                                    id={data.id}
                                     img={data.img}
                                     title={data.title}
                                     category={data.category}
