@@ -6,7 +6,7 @@ import TopCard from "./TopCard"
 export default function TopPodcasts () {
     return (
         <>
-            <div className="flex flex-1 items-center justify-center sm:justify-normal sm:gap-2 gap-0.5 mx-6 sm:mt-6 mt-4 sm:mb-2">
+            <div className="flex flex-1 items-center justify-center sm:justify-normal sm:gap-2 gap-0.5 mx-6 sm:mt-6 mt-2 mb-2">
                 <Image src={Assets.Star} alt="star" className="sm:w-6 sm:h-6 w-4 h-4"/>
                 <span className="font-bold sm:text-2xl text-xl text-white">Pick of the week</span>
             </div>
@@ -15,7 +15,7 @@ export default function TopPodcasts () {
 
                 <div className="sm:ml-5 relative sm:w-2/4 m-3 sm:m-0">
 
-                    <Image src={Assets.Fs} alt="pick-of-the-week" className="sm:w-[628px] sm:h-[477px] w-[408px] h-[257px] -mt-4 object-contain" />
+                    <Image src={Assets.Fs} alt="pick-of-the-week" className="sm:w-[628px] sm:h-[477px] w-[408px] h-[257px] -mt-3 object-contain mb-4" />
 
                     <span className="flex flex-1 items-center gap-1 rounded-3xl bg-[#7B61FF] w-fit px-3 py-2 absolute right-6 bottom-10">
                         <span className="font-bold text-sm text-white">Listen now</span>
@@ -35,7 +35,7 @@ export default function TopPodcasts () {
 
                     <span className="text-gray-500 my-4"><span className="text-white">&bull;</span>&bull;&bull;&bull;&bull;&bull;&bull;</span>
 
-                    <div className="overflow-x-scroll flex gap-3">
+                    <div className="overflow-x-scroll overflow-hidden flex gap-3">
                         {
                             TopPodcastsData.map((data) => (
 

@@ -39,7 +39,7 @@ export default function Home() {
           </div>
 
 
-          <div className="w-full mx-10 mt-8 mb-3 overflow-y-scroll">
+          <div className="mx-10 mt-8 mb-3 overflow-hidden overflow-y-scroll">
             {
               LatestEpisodesData.map(data => (
                 <LatestEpisodes 
@@ -66,10 +66,10 @@ export default function Home() {
 
           <span className='h-[1px] bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] my-3 w-full'></span>
 
-            <div className="overflow-y-scroll mb-3 p-1 sm:p-0">
+            <div className="overflow-y-scroll overflow-hidden mb-3 p-1 sm:p-0">
               {
                 MadeForYouData.map(data => (
-                <div className="flex items-center sm:px-5 sm:mb-1 overflow-y-scroll" key={data.title}>
+                <div className="flex items-center sm:px-5 sm:mb-1 overflow-y-scroll overflow-hidden" key={data.title}>
                   <LatestEpisodesList
                     title={data.title}
                     duration={data.duration}
@@ -95,7 +95,7 @@ export default function Home() {
           <span className="text-[#C3C3C3] font-medium sm:text-lg text-base sm:ml-16 justify-center sm:justify-normal ml-12">#Community&lsquo;s choice</span>
         </div>
 
-        <div className="shrink-0 rounded-[3px] shadow-md flex gap-3 overflow-x-scroll sm:m-6 m-2.5">
+        <div className="shrink-0 rounded-[3px] shadow-md flex gap-3 overflow-x-scroll overflow-hidden sm:m-6 m-2.5">
           {
             PopularCardData.map(data => (
               <PopularCard
@@ -122,7 +122,7 @@ export default function Home() {
           <span className="text-[#C3C3C3] font-medium sm:text-lg text-base sm:ml-16 justify-center sm:justify-normal ml-12 -mt-4">#Editor&lsquo;s choice</span>
         </div>
 
-        <div className="flex sm:gap-3 gap-2 items-center sm:m-6 m-2.5 overflow-x-scroll">
+        <div className="flex sm:gap-3 gap-2 items-center sm:m-6 m-2.5 overflow-x-scroll overflow-hidden">
           {
             HostSuggestionData.map(data => (
               <div className="flex flex-col rounded-[3px] shrink-0 p-3 bg-white sm:w-[230px] sm:h-[295px] w-[180px] h-[245px] items-center" key={data.title}>
@@ -150,7 +150,7 @@ export default function Home() {
           <span className="text-[#C3C3C3] font-medium sm:text-lg text-base sm:ml-16 ml-12">#suggested for you</span>
         </div>
 
-         <div className="flex sm:gap-6 items-center my-6 sm:mx-28 sm:w-[90%] m-2.5 gap-3 overflow-x-scroll sm:overflow-hidden sm:flex-wrap">
+         <div className="flex sm:gap-6 items-center my-6 sm:mx-28 sm:w-[90%] m-2.5 gap-3 overflow-x-scroll overflow-hidden sm:flex-wrap">
           {
             OtherListenersData.map(data => (
               <div className="flex flex-col rounded-[3px] shrink-0 sm:p-3 p-2 bg-white sm:w-[230px] sm:h-[295px] w-[180px] h-[245px] items-center" key={data.title}>

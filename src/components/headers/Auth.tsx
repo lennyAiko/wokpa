@@ -3,7 +3,7 @@ import Assets from "@/assets"
 
 export default function Auth() {
     return (
-        <div className="sm:w-1/5 flex flex-1 flex-row mx-4 sm:mx-0 sm:hidden">
+        <div className="sm:w-1/5 flex flex-1 flex-row mx-4 my-2 sm:my-0 sm:mx-0 sm:hidden">
 
             <div className="flex flex-row items-center sm:space-x-6 space-x-3">
 

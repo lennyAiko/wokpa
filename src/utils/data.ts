@@ -114,7 +114,7 @@ export const TopCategoriesData = [
 export const LatestEpisodesData = [
     {
         number: 1,
-        title: "The ministry of prayer and the world",
+        title: "The ministry of prayer and the world the world the world",
         author: "Apostle Joshua Suleiman",
         date: "20 June",
         duration: "23-30 minutes",
