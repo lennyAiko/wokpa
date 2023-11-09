@@ -10,18 +10,20 @@ interface LatestEpisodesType {
     date: string
     duration: string
     likes: number
-    img: string
+    img: any
+    id: number
 }
 
-const LatestEpisodes: React.FC<LatestEpisodesType> = ({number, title, author, date, duration, likes, img, ...props}) => {
+const LatestEpisodes: React.FC<LatestEpisodesType> = ({number, title, author, date, duration, likes, img, id, ...props}) => {
     return (
-        <div className="flex mb-4 gap-4 overflow-y-scroll overflow-hidden">
+        <div className="flex mb-4 gap-4 overflow-y-scroll overflow-hidden" key={id}>
 
             <span className="font-medium text-[13px] text-white hidden sm:flex">{TwoDigits(number)}</span>
 
             <div className="flex flex-col sm:flex-row gap-2.5 sm:mt-4 sm:-ml-10 sm:items-center sm:justify-between w-full">
 
               <LatestEpisodesList
+                id={id}
                 img={img}
                 author={author}
                 duration={duration}

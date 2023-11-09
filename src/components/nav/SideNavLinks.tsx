@@ -3,7 +3,7 @@ import Link from "next/link"
 
 interface SideNavLinksProps {
     name: string
-    img?: string
+    img?: any
     link?: string
 }
 

@@ -27,7 +27,7 @@ export default function SideNav () {
 
                     {
                         NavData.slice(0, 4).map((data) => (
-                            <SideNavLinks name={data.name} img={data.img} link={data.link} key={data.name} />
+                            <SideNavLinks name={data.name} img={data.img} link={data.link} key={data.id} />
                         ))
                     }
 
@@ -46,7 +46,7 @@ export default function SideNav () {
 
                     {
                         NavData.slice(4, 7).map((data) => (
-                            <SideNavLinks name={data.name} img={data.img} link={data.link} key={data.name} />
+                            <SideNavLinks name={data.name} img={data.img} link={data.link} key={data.id} />
                         ))
                     }
 
@@ -54,7 +54,7 @@ export default function SideNav () {
 
                     {
                         NavData.slice(7, NavData.length).map((data) => (
-                            <Link href={data.link ? `${data.link}` : "/"} key={data.name}>
+                            <Link href={data.link ? `${data.link}` : "/"} key={data.id}>
                                 <div className="flex flex-row items-center hover:bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] w-full tracking-normal px-6 my-1 py-2">
                                     <Image src={data.img} alt={`${data.name} image`} 
                                     className="w-5 h-5 lg:m-2 md:m-2.5 m-2"/>
@@ -87,7 +87,7 @@ export default function SideNav () {
 
                     {
                         NavData.slice(0, 4).map((data) => (
-                            <SideNavLinks name={data.name} img={data.img} link={data.link} key={data.name} />
+                            <SideNavLinks name={data.name} img={data.img} link={data.link} key={data.id} />
                         ))
                     }
 
@@ -106,7 +106,7 @@ export default function SideNav () {
 
                     {
                         NavData.slice(4, 7).map((data) => (
-                            <SideNavLinks name={data.name} img={data.img} link={data.link} key={data.name} />
+                            <SideNavLinks name={data.name} img={data.img} link={data.link} key={data.id} />
                         ))
                     }
 
@@ -114,7 +114,7 @@ export default function SideNav () {
 
                     {
                         NavData.slice(7, NavData.length).map((data) => (
-                            <Link href={data.link ? `${data.link}` : "/"} key={data.name}>
+                            <Link href={data.link ? `${data.link}` : "/"} key={data.id}>
                                 <div className="flex flex-row items-center hover:bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] w-full tracking-normal px-6 my-1 py-2">
                                     <Image src={data.img} alt={`${data.name} image`} 
                                     className="w-5 h-5 lg:m-2 md:m-2.5 m-2"/>

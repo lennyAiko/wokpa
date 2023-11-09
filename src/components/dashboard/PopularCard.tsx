@@ -2,12 +2,12 @@ import Image from "next/image"
 import { SubscribeDigitConvert } from "@/utils/extras"
 
 interface PopularCardProps {
-    posterImg: string
+    posterImg: any
     title: string
     author: string
-    subImg1: string
-    subImg2: string
-    subImg3: string
+    subImg1: any
+    subImg2: any
+    subImg3: any
     subscribers: number
 }
 

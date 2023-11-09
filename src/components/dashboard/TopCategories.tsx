@@ -17,6 +17,8 @@ export default function TopCategories () {
                     {
                         TopCategoriesData.map(data => (
                             <TopCategoriesList
+                                key={data.id}
+                                id={data.id}
                                 img={data.img}
                                 color={data.color}
                                 name={data.name}
