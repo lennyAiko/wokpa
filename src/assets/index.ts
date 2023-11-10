@@ -47,9 +47,14 @@ import Search from './header/search.svg'
 
 import GoogleIcon from './modal/googleIcon.svg'
 import CloseIcon from './modal/closeIcon.svg'
+import Right from './modal/right.svg'
+import FacebookIcon from './modal/facebook.svg'
+import AppleIcon from './modal/apple.svg'
+import EnvelopeIcon from './modal/envelope.svg'
+import DownIcon from './modal/down.svg'
 
 const Assets = {
-    Star, Fs, PlayCircle, TopCategories, Down, Discover, Top50, Categories, AddPodcast, YourPlaylist, RecentlyPlayed, SH, WokpaPodcasters, WokpaAdvertisers, ReadBlog, Joe, MarcMaron, JoeR, Category, HDTGM, Comedy, HF, Love, Education, Religion, Music, Technology, GP, RatingStarColored, RatingStar, LeDownload, LeHam, LeLove, LePlus, LeShare, WokpaLogo, SLove, SHam, SPlus, User, Mobile, Search, Close, Menu, GoogleIcon, CloseIcon
+    Star, Fs, PlayCircle, TopCategories, Down, Discover, Top50, Categories, AddPodcast, YourPlaylist, RecentlyPlayed, SH, WokpaPodcasters, WokpaAdvertisers, ReadBlog, Joe, MarcMaron, JoeR, Category, HDTGM, Comedy, HF, Love, Education, Religion, Music, Technology, GP, RatingStarColored, RatingStar, LeDownload, LeHam, LeLove, LePlus, LeShare, WokpaLogo, SLove, SHam, SPlus, User, Mobile, Search, Close, Menu, GoogleIcon, CloseIcon, Right, FacebookIcon, AppleIcon, EnvelopeIcon, DownIcon
 }
 
 export default Assets

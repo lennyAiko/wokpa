@@ -8,7 +8,7 @@ import { store } from '../../../store'
 
 export default function Header() {
 
-    const {setViewSignup, setViewLogin} = store()
+    const {setViewSignUp, setViewLogin} = store()
 
     return (
         <>
@@ -28,7 +28,7 @@ export default function Header() {
                     <div className="flex flex-row items-center space-x-6">
 
                         <button className="flex flex-row items-center space-x-1 bg-[#1EAEA3] py-2 px-3 rounded-xl" 
-                        onClick={() => setViewSignup()}>
+                        onClick={() => setViewSignUp()}>
                             <Image src={Assets.WokpaPodcasters} alt="sign up icon" className="w-[18px] h-[18px]" />
                             <span className="tracking-tighter font-semibold text-base text-white">SIGN UP</span>
                         </button>
