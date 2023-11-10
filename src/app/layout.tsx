@@ -7,6 +7,7 @@ import BaseHead from '@/components/headers/BaseHead'
 import SideNav from '@/components/nav/SideNav'
 import Header from '@/components/headers/Header'
 import Footer from '@/components/footer/Footer'
+import Login from '@/components/modals/Login'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
       <BaseHead 
@@ -37,7 +39,7 @@ export default function RootLayout({
           <div className="sm:w-3/4 w-full flex flex-col">
           
             <Header />
-            
+
             {children}
             
             <Footer />

@@ -20,7 +20,7 @@ const LatestEpisodes: React.FC<LatestEpisodesType> = ({number, title, author, da
 
             <span className="font-medium text-[13px] text-white hidden sm:flex">{TwoDigits(number)}</span>
 
-            <div className="flex flex-col sm:flex-row gap-2.5 sm:mt-4 sm:-ml-10 sm:items-center sm:justify-between w-full">
+            <div className="flex flex-col sm:flex-row gap-2 sm:mt-4 sm:-ml-10 sm:items-center sm:justify-between sm:w-[90%]">
 
               <LatestEpisodesList
                 id={id}
@@ -31,7 +31,7 @@ const LatestEpisodes: React.FC<LatestEpisodesType> = ({number, title, author, da
                 title={title}
               />
 
-              <div className="w-1/5 flex gap-1 items-center">
+              <div className="w-1/5 flex gap-1 items-center justify-center">
                 <Image src={Assets.RatingStarColored} alt="rating" className="w-4 h-4" />
                 <Image src={Assets.RatingStarColored} alt="rating" className="w-4 h-4" />
                 <Image src={Assets.RatingStarColored} alt="rating" className="w-4 h-4" />
@@ -39,7 +39,7 @@ const LatestEpisodes: React.FC<LatestEpisodesType> = ({number, title, author, da
                 <Image src={Assets.RatingStar} alt="rating" className="w-4 h-4" />
               </div>
 
-              <div className="w-1/5 flex sm:ml-16 space-x-8 items-center">
+              <div className="w-1/5 flex sm:ml-16 space-x-6 items-center justify-center">
                 <div className="flex gap-0.5 flex-col items-center">
                   <Image src={Assets.LeLove} alt="icons" className="w-[18px] h-[18px]" />
                   <span className="text-white font-normal text-xs">{likes}</span>

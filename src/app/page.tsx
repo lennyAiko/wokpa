@@ -1,5 +1,6 @@
-import TopCard from "@/components/dashboard/TopCard"
-import { TopCategoriesData, TopPodcastsData, LatestEpisodesData, MadeForYouData, PopularCardData, HostSuggestionData, OtherListenersData, KeywordsData } from "@/utils/data"
+"use client"
+
+import { LatestEpisodesData, MadeForYouData, PopularCardData, HostSuggestionData, OtherListenersData, KeywordsData } from "@/utils/data"
 import TopCategoriesList from "@/components/dashboard/TopCategoriesList"
 import LatestEpisodes from "@/components/dashboard/LatestEpisodes"
 import LatestEpisodesList from "@/components/dashboard/LatestEpisodesList"
@@ -11,8 +12,13 @@ import Assets from "@/assets"
 import TopPodcasts from "@/components/dashboard/TopPodcasts"
 import TopCategories from "@/components/dashboard/TopCategories"
 import SectionTitle from "@/components/dashboard/SectionTitle"
+import MadeForYou from "@/components/modals/MadeForYou"
+
+import { store } from "../../store"
 
 export default function Home() {
+
+  const { isAuthenticated } = store()
 
   return (
     <main className='bg-[#212121] flex-col w-screen'>
@@ -29,11 +35,11 @@ export default function Home() {
 
             <div className="flex flex-col sm:items-end">
               <SectionTitle name="Latest episodes" />
-              <span className="text-[#C3C3C3] font-medium sm:text-lg text-base flex sm:justify-normal justify-center -mt-4 -ml-10 sm:-ml-10 sm:-mt-0">#Fresh out of the studio!</span>
+              <span className="text-[#C3C3C3] font-medium sm:text-lg text-base flex sm:justify-normal justify-center -mt-4 -ml-10 sm:-mt-2">#Fresh out of the studio!</span>
             </div>
 
             <div className="flex items-center justify-center sm:justify-normal relative sm:mr-6 mr-8 mt-2 sm:mt-0">
-              <input type="text" placeholder="Filter by category" className="sm:px-4 sm:py-3 px-2 py-2 w-[60%] h-fit bg-[#272626] border border-[#DCDCDC] rounded-xl" />
+              <input type="text" placeholder="Filter by category" className="sm:px-4 sm:py-3 px-2 py-2 w-[60%] sm:w-[80%] h-fit bg-[#272626] border border-[#DCDCDC] rounded-xl" />
               <Image src={Assets.Down} alt="down" className="absolute right-[25%] w-[14px] h-2" />
             </div>
           </div>
@@ -65,12 +71,15 @@ export default function Home() {
             <span className="text-[#C3C3C3] font-medium sm:text-lg text-base">Episodes you don&lsquo;t want to miss out on.</span>
           </div>
 
-          <span className='h-[1px] bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] my-3 w-full'></span>
+          <div className='h-[1px] sm:h-[2px] bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] my-3 w-full'></div>
 
-            <div className="overflow-y-scroll overflow-hidden mb-3 p-1 sm:p-0">
-              {
-                MadeForYouData.map(data => (
-                <div className="flex items-center sm:px-5 sm:mb-1 overflow-y-scroll overflow-hidden" key={data.id}>
+          <div className={`${isAuthenticated ? 'overflow-y-scroll' : '' } mb-3 p-1 sm:pb-2 w-full sm:p-0 mt-3 overflow-hidden relative`}>
+
+          <MadeForYou />
+          
+            {
+              MadeForYouData.map(data => (
+                <div className="flex items-center sm:px-5 sm:mb-1" key={data.id}>
                   <LatestEpisodesList
                     id={data.id}
                     title={data.title}
@@ -80,9 +89,10 @@ export default function Home() {
                     date={data.date}
                   />
                 </div>
-                ))
-              }
-            </div>
+              ))
+            }
+          </div>
+
 
         </div>
 

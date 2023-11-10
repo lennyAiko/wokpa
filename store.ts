@@ -1,15 +1,25 @@
 import { create } from 'zustand'
 
 interface Store {
-    toggleMenu: boolean
-    setToggleMenu: () => void
+    viewLogin: boolean
+    viewSignUp: boolean
+    isAuthenticated: boolean
+    setViewLogin: () => void
+    setViewSignUp: () => void
 }
 
 export const store = create<Store>((set) => ({
-    toggleMenu: false,
-    setToggleMenu: () => {
+    viewLogin: false,
+    viewSignUp: false,
+    isAuthenticated: false,
+    setViewLogin: () => {
         set((state) => ({ 
-            toggleMenu: state.toggleMenu = !state.toggleMenu
+            viewLogin: state.viewLogin = !state.viewLogin
+        }))
+    },
+    setViewSignUp: () => {
+        set((state) => ({
+            viewSignUp: state.viewSignUp = !state.viewSignUp
         }))
     }
 }))
