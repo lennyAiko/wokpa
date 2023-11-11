@@ -73,9 +73,9 @@ export default function Home() {
 
           <div className='h-[1px] sm:h-[2px] bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] my-3 w-full'></div>
 
-          <div className={`${isAuthenticated ? 'overflow-y-scroll' : '' } mb-3 p-1 sm:pb-2 w-full sm:p-0 mt-3 overflow-hidden relative`}>
+          <div className={`${isAuthenticated ? 'overflow-y-scroll' : '' } mb-3 p-1 sm:pb-2 w-full sm:p-0 mt-3 relative overflow-hidden`}>
 
-          <MadeForYou />
+          <MadeForYou isVisible={isAuthenticated} />
           
             {
               MadeForYouData.map(data => (
