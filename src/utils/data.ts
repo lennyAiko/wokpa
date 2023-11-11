@@ -893,3 +893,69 @@ export const FavouritesData = [
         img: Assets.HDTGM
     }
 ]
+
+export const QueueData = [
+    {
+        number: 1,
+        title: "The ministry of prayer and the world the world the world",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        likes: 345,
+        img: Assets.HDTGM
+    },
+    {
+        number: 2,
+        title: "The ministry of prayer and the world",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        likes: 600,
+        img: Assets.HDTGM
+    },
+    {
+        number: 3,
+        title: "The ministry of prayer and the world",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        likes: 500,
+        img: Assets.HDTGM
+    },
+    {
+        number: 4,
+        title: "The ministry of prayer and the world",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        likes: 300,
+        img: Assets.HDTGM
+    },
+    {
+        number: 5,
+        title: "The ministry of prayer and the world",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        likes: 200,
+        img: Assets.HDTGM
+    },    
+    {
+        number: 6,
+        title: "The ministry of prayer and the world",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        likes: 100,
+        img: Assets.HDTGM
+    },
+    {
+        number: 7,
+        title: "The ministry of prayer and the world",
+        author: "Apostle Joshua Suleiman",
+        date: "20 June",
+        duration: "23-30 minutes",
+        likes: 150,
+        img: Assets.HDTGM
+    }
+]

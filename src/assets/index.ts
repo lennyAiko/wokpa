@@ -56,8 +56,12 @@ import DownIcon from './modal/down.svg'
 import HeartIcon from './favourites/heart.svg'
 import Player from './favourites/player.svg'
 
+import QueueIcon from './queue/queue.svg'
+import QueuePlayer from './queue/player.svg'
+import QueueHam from './queue/ham.svg'
+
 const Assets = {
-    Star, Fs, PlayCircle, TopCategories, Down, Discover, Top50, Categories, AddPodcast, YourPlaylist, RecentlyPlayed, SH, WokpaPodcasters, WokpaAdvertisers, ReadBlog, Joe, MarcMaron, JoeR, Category, HDTGM, Comedy, HF, Love, Education, Religion, Music, Technology, GP, RatingStarColored, RatingStar, LeDownload, LeHam, LeLove, LePlus, LeShare, WokpaLogo, SLove, SHam, SPlus, User, Mobile, Search, Close, Menu, GoogleIcon, CloseIcon, Right, FacebookIcon, AppleIcon, EnvelopeIcon, DownIcon, HeartIcon, Player
+    Star, Fs, PlayCircle, TopCategories, Down, Discover, Top50, Categories, AddPodcast, YourPlaylist, RecentlyPlayed, SH, WokpaPodcasters, WokpaAdvertisers, ReadBlog, Joe, MarcMaron, JoeR, Category, HDTGM, Comedy, HF, Love, Education, Religion, Music, Technology, GP, RatingStarColored, RatingStar, LeDownload, LeHam, LeLove, LePlus, LeShare, WokpaLogo, SLove, SHam, SPlus, User, Mobile, Search, Close, Menu, GoogleIcon, CloseIcon, Right, FacebookIcon, AppleIcon, EnvelopeIcon, DownIcon, HeartIcon, Player, QueueIcon, QueuePlayer, QueueHam
 }
 
 export default Assets
