@@ -60,8 +60,21 @@ import QueueIcon from './queue/queue.svg'
 import QueuePlayer from './queue/player.svg'
 import QueueHam from './queue/ham.svg'
 
+import Arts from './categories/arts&culture.svg'
+import Business from './categories/bus&invest.svg'
+import ComedyCategory from './categories/comedy.svg'
+import EducationCategory from './categories/education.svg'
+import Govt from './categories/govt&politics.svg'
+import Health from './categories/health&fitness.svg'
+import Kids from './categories/kids&parent.svg'
+import LoveRomance from './categories/love&romance.svg'
+import News from './categories/news.svg'
+import ReligionCategory from './categories/religion.svg'
+import Sports from './categories/sports.svg'
+import TechnologyCategory from './categories/technology.svg'
+
 const Assets = {
-    Star, Fs, PlayCircle, TopCategories, Down, Discover, Top50, Categories, AddPodcast, YourPlaylist, RecentlyPlayed, SH, WokpaPodcasters, WokpaAdvertisers, ReadBlog, Joe, MarcMaron, JoeR, Category, HDTGM, Comedy, HF, Love, Education, Religion, Music, Technology, GP, RatingStarColored, RatingStar, LeDownload, LeHam, LeLove, LePlus, LeShare, WokpaLogo, SLove, SHam, SPlus, User, Mobile, Search, Close, Menu, GoogleIcon, CloseIcon, Right, FacebookIcon, AppleIcon, EnvelopeIcon, DownIcon, HeartIcon, Player, QueueIcon, QueuePlayer, QueueHam
+    Star, Fs, PlayCircle, TopCategories, Down, Discover, Top50, Categories, AddPodcast, YourPlaylist, RecentlyPlayed, SH, WokpaPodcasters, WokpaAdvertisers, ReadBlog, Joe, MarcMaron, JoeR, Category, HDTGM, Comedy, HF, Love, Education, Religion, Music, Technology, GP, RatingStarColored, RatingStar, LeDownload, LeHam, LeLove, LePlus, LeShare, WokpaLogo, SLove, SHam, SPlus, User, Mobile, Search, Close, Menu, GoogleIcon, CloseIcon, Right, FacebookIcon, AppleIcon, EnvelopeIcon, DownIcon, HeartIcon, Player, QueueIcon, QueuePlayer, QueueHam, Arts, Business, ComedyCategory, EducationCategory, Govt, Health, Kids, LoveRomance, News, ReligionCategory, Sports, TechnologyCategory
 }
 
 export default Assets

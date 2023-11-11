@@ -4,7 +4,8 @@ import SideNavLinks from './SideNavLinks'
 import { NavData } from '@/utils/data'
 import Image from 'next/image'
 import Assets from '@/assets'
-import Search from '../headers/Search';
+import Search from '../headers/Search'
+import { usePathname } from 'next/navigation';
 
 import {useState} from 'react'
 import Auth from '../headers/Auth';
@@ -12,6 +13,8 @@ import Auth from '../headers/Auth';
 export default function SideNav () {
 
     const [toggle, setToggle] = useState(false)
+
+    const pathName = usePathname()
 
     return (
         <>
@@ -38,13 +41,13 @@ export default function SideNav () {
 
                     <div className='flex flex-row items-center md:space-x-6 lg:space-x-12 ml-8 my-3 space-x-6'>
 
-                        <Link className="hover:bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] w-7 h-7 flex items-center justify-center" href={"/favourites"}>
+                        <Link className={`${pathName === "/favourites" ? 'active active:bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900]': ''}hover:bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] w-7 h-7 flex items-center justify-center`} href={"/favourites"}>
                             <Image src={Assets.SLove} alt="love" className="w-[18px] h-[18px]" />
                         </Link>
-                        <Link className="hover:bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] w-7 h-7 flex items-center justify-center" href={"/queue"}>
+                        <Link className={`${pathName === "/queue" ? 'active active:bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900]': ''}hover:bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] w-7 h-7 flex items-center justify-center`} href={"/queue"}>
                             <Image src={Assets.SHam} alt="ham" className="w-[18px] h-[18px]" />
                         </Link>
-                        <Link className="hover:bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] w-7 h-7 flex items-center justify-center" href={"/"}>
+                        <Link className={`${pathName === "/favourites" ? 'active active:bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900]': ''}hover:bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] w-7 h-7 flex items-center justify-center`} href={"/"}>
                             <Image src={Assets.SPlus} alt="plus" className="w-[30px] h-[30px]" />
                         </Link>
 
