@@ -15,7 +15,7 @@ export default function SideNav () {
 
     return (
         <>
-            <div className='bg-[#303030] text-white flex-col items-left h-full fixed top-0 left-0 lg:w-1/5 sm:w-1/3 sm:flex hidden'>
+            <div className='bg-[#303030] text-white flex-col items-left h-full fixed top-0 left-0 lg:w-1/5 sm:w-1/3 sm:flex hidden overflow-y-scroll'>
             
                 <div className='lg:mx-8 md:mx-6 mx-6 my-4'>
                     <Link href="/">
@@ -38,9 +38,15 @@ export default function SideNav () {
 
                     <div className='flex flex-row items-center md:space-x-6 lg:space-x-12 ml-8 my-3 space-x-6'>
 
-                        <Image src={Assets.SLove} alt="love" className="w-[18px] h-[18px]" />
-                        <Image src={Assets.SHam} alt="ham" className="w-[18px] h-[18px]" />
-                        <Image src={Assets.SPlus} alt="plus" className="w-[30px] h-[30px]" />
+                        <Link className="hover:bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] w-7 h-7 flex items-center justify-center" href={"/favourites"}>
+                            <Image src={Assets.SLove} alt="love" className="w-[18px] h-[18px]" />
+                        </Link>
+                        <Link className="hover:bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] w-7 h-7 flex items-center justify-center" href={"/queue"}>
+                            <Image src={Assets.SHam} alt="ham" className="w-[18px] h-[18px]" />
+                        </Link>
+                        <Link className="hover:bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] w-7 h-7 flex items-center justify-center" href={"/"}>
+                            <Image src={Assets.SPlus} alt="plus" className="w-[30px] h-[30px]" />
+                        </Link>
 
                     </div>
 
@@ -73,6 +79,7 @@ export default function SideNav () {
                 <Image src={toggle ? Assets.Close : Assets.Menu} alt="menu icon" className='w-7 h-7 object-contain' onClick={() => setToggle((prev) => !prev)} />
             </div>
 
+            {/* MOBILE */}
             <div className={`bg-[#303030] text-white items-left h-full fixed top-0 left-0 lg:w-1/5 sm:w-1/3 z-40 ${ toggle ? 'flex-col': 'hidden'}`}>
 
                 <div className='sm:mx-24 mx-6 my-2.5 sm:my-12 sm:justify-start justify-center sm:items-start items-center'>
@@ -98,9 +105,17 @@ export default function SideNav () {
 
                     <div className='flex flex-row items-center md:space-x-6 lg:space-x-12 ml-8 my-3 space-x-6'>
 
-                        <Image src={Assets.SLove} alt="love" className="w-[18px] h-[18px]" />
-                        <Image src={Assets.SHam} alt="ham" className="w-[18px] h-[18px]" />
-                        <Image src={Assets.SPlus} alt="plus" className="w-[30px] h-[30px]" />
+                        <Link href="/favourites" className='hover:bg-white'>
+                            <Image src={Assets.SLove} alt="love" className="w-[18px] h-[18px]" />
+                        </Link>
+
+                        <Link href="/">
+                            <Image src={Assets.SHam} alt="ham" className="w-[18px] h-[18px]" />
+                        </Link>
+                        
+                        <Link href="/">
+                            <Image src={Assets.SPlus} alt="plus" className="w-[30px] h-[30px]" />
+                        </Link>
 
                     </div>
 

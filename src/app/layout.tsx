@@ -7,7 +7,6 @@ import BaseHead from '@/components/headers/BaseHead'
 import SideNav from '@/components/nav/SideNav'
 import Header from '@/components/headers/Header'
 import Footer from '@/components/footer/Footer'
-import Login from '@/components/modals/Login'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,9 +29,9 @@ export default function RootLayout({
       />
       <body className={`${inter.className}`}>
         
-        <div className="sm:w-max sm:flex sm:flex-row w-full bg-black" role='main'>
+        <div className="sm:w-max sm:flex sm:flex-row w-full bg-[#303030] h-fit" role='main'>
           
-          <div className='sm:w-1/4 w-full'>
+          <div className='sm:w-1/4 w-full max-h-screen'>
             <SideNav />
           </div>
           
