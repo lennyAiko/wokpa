@@ -47,10 +47,10 @@ export default function YourFavourites () {
                 <Image src={Assets.Down} alt="down" className="relative place-self-center -ml-8" />
             </div>
 
-            <div className="m-14 h-[65%] w-[90%] overflow-y-scroll">
+            <div className="m-6 h-[65%] w-[90%] overflow-y-scroll">
                 {
                     FavouritesData.map(({number, img, author, duration, date, title, likes}) => (
-                        <div className="flex flex-col sm:flex-row gap-2 sm:mt-4 sm:-ml-10 sm:items-center sm:justify-between sm:w-[70%]" key={number}>
+                        <div className="flex flex-col sm:flex-row gap-2 sm:mt-4 sm:items-center sm:justify-between sm:w-[70%]" key={number}>
                             <LatestEpisodesList
                                 id={number}
                                 img={img}
