@@ -44,6 +44,7 @@ import Menu from './sidenav/menu.svg'
 import User from './header/user.svg'
 import Mobile from './header/mobile.svg'
 import Search from './header/search.svg'
+import Lennox from './header/lcc.png'
 
 import GoogleIcon from './modal/googleIcon.svg'
 import CloseIcon from './modal/closeIcon.svg'
@@ -74,7 +75,7 @@ import Sports from './categories/sports.svg'
 import TechnologyCategory from './categories/technology.svg'
 
 const Assets = {
-    Star, Fs, PlayCircle, TopCategories, Down, Discover, Top50, Categories, AddPodcast, YourPlaylist, RecentlyPlayed, SH, WokpaPodcasters, WokpaAdvertisers, ReadBlog, Joe, MarcMaron, JoeR, Category, HDTGM, Comedy, HF, Love, Education, Religion, Music, Technology, GP, RatingStarColored, RatingStar, LeDownload, LeHam, LeLove, LePlus, LeShare, WokpaLogo, SLove, SHam, SPlus, User, Mobile, Search, Close, Menu, GoogleIcon, CloseIcon, Right, FacebookIcon, AppleIcon, EnvelopeIcon, DownIcon, HeartIcon, Player, QueueIcon, QueuePlayer, QueueHam, Arts, Business, ComedyCategory, EducationCategory, Govt, Health, Kids, LoveRomance, News, ReligionCategory, Sports, TechnologyCategory
+    Star, Fs, PlayCircle, TopCategories, Down, Discover, Top50, Categories, AddPodcast, YourPlaylist, RecentlyPlayed, SH, WokpaPodcasters, WokpaAdvertisers, ReadBlog, Joe, MarcMaron, JoeR, Category, HDTGM, Comedy, HF, Love, Education, Religion, Music, Technology, GP, RatingStarColored, RatingStar, LeDownload, LeHam, LeLove, LePlus, LeShare, WokpaLogo, SLove, SHam, SPlus, User, Mobile, Search, Close, Menu, GoogleIcon, CloseIcon, Right, FacebookIcon, AppleIcon, EnvelopeIcon, DownIcon, HeartIcon, Player, QueueIcon, QueuePlayer, QueueHam, Arts, Business, ComedyCategory, EducationCategory, Govt, Health, Kids, LoveRomance, News, ReligionCategory, Sports, TechnologyCategory, Lennox
 }
 
 export default Assets

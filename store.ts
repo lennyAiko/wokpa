@@ -11,7 +11,7 @@ interface Store {
 export const store = create<Store>((set) => ({
     viewLogin: false,
     viewSignUp: false,
-    isAuthenticated: false,
+    isAuthenticated: true,
     setViewLogin: () => {
         set((state) => ({ 
             viewLogin: state.viewLogin = !state.viewLogin

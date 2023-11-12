@@ -111,7 +111,7 @@ export default function Home() {
           {
             PopularCardData.map(data => (
               <PopularCard
-                key={data.title}
+                key={data.id}
                 posterImg={data.posterImg}
                 title={data.title}
                 author={data.author}

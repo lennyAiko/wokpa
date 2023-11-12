@@ -964,51 +964,39 @@ export const CategoriesData = [
     {
         id: 1,
         img: Assets.Arts,
-        link: "/category/:id"
     },               
     {
         id: 2,
         img: Assets.Business,
-        link: "/category/:id"
     },   {
         id: 3,
         img: Assets.ComedyCategory,
-        link: "/category/:id"
     },   {
         id: 4,
         img: Assets.EducationCategory,
-        link: "/category/:id"
     },   {
         id: 5,
         img: Assets.Govt,
-        link: "/category/:id"
     },   {
         id: 6,
         img: Assets.Health,
-        link: "/category/:id"
     },   {
         id: 7,
         img: Assets.Kids,
-        link: "/category/:id"
     },   {
         id: 8,
         img: Assets.LoveRomance,
-        link: "/category/:id"
     },   {
         id: 9,
         img: Assets.News,
-        link: "/category/:id"
     },   {
         id: 10,
         img: Assets.ReligionCategory,
-        link: "/category/:id"
     },   {
         id: 11,
         img: Assets.Sports,
-        link: "/category/:id"
     },   {
         id: 12,
         img: Assets.TechnologyCategory,
-        link: "/category/:id"
     }
 ]

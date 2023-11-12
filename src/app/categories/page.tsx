@@ -12,9 +12,9 @@ export default function Categories () {
 
             <div className="grid grid-cols-5 gap-10 w-[75%] mx-20">
                 {
-                    CategoriesData.map(({id, img, link}) => (
-                        <Link href={link}>
-                            <Image src={img} alt="category image" key={id} />
+                    CategoriesData.map(({id, img}) => (
+                        <Link href={`/categories/${id}`} key={id}>
+                            <Image src={img} alt="category image" />
                         </Link>
                     ))
                 }
