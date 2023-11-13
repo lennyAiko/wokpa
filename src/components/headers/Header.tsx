@@ -29,10 +29,10 @@ export default function Header() {
 
                     <span className="text-white font-medium text-base">Lennox  {/*username*/}</span>
 
-                    <button className="text-[#B9B9B9] flex gap-1 ml-4 mr-1 h-fit w-fit">
-                        <span className="w-[5px] h-[5px]">&bull;</span>
-                        <span className="w-[5px] h-[5px]">&bull;</span>
-                        <span className="w-[5px] h-[5px]">&bull;</span>
+                    <button className="text-[#B9B9B9] flex gap-1 ml-4 mr-1 h-fit w-fit [&>span]:w-[5px] [&>span]:h-[5px]">
+                        <span className="">&bull;</span>
+                        <span className="">&bull;</span>
+                        <span className="">&bull;</span>
                     </button>
 
                 </div>

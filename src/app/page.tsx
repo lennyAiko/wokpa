@@ -15,6 +15,7 @@ import SectionTitle from "@/components/dashboard/SectionTitle"
 import MadeForYou from "@/components/modals/MadeForYou"
 
 import { store } from "../../store"
+import Line from "@/components/common/Line"
 
 export default function Home() {
 
@@ -98,7 +99,7 @@ export default function Home() {
 
       </div>
 
-      <div className='h-[1px] bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] my-3 w-full mt-14'></div>
+      <Line />
 
       <div className="sm:m-6 m-2.5 flex flex-col">
 
@@ -125,7 +126,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className='h-[1px] bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] my-3 w-full mt-8'></div>
+      <Line />
 
       <div className="sm:m-8 m-2.5 flex flex-col">
 
@@ -152,7 +153,7 @@ export default function Home() {
 
       </div>
 
-      <div className='h-[1px] bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] my-3 w-full mt-8'></div>
+      <Line />
 
       <div className="sm:m-8 flex flex-col m-2.5">
 
