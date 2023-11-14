@@ -18,7 +18,7 @@ export default function SideNav () {
 
     return (
         <>
-            <div className='bg-[#303030] text-white flex-col items-left h-full fixed top-0 left-0 lg:w-1/5 sm:w-1/3 sm:flex hidden overflow-y-scroll'>
+            <div className='bg-[#303030] text-white flex-col items-left h-screen fixed top-0 left-0 lg:w-1/5 sm:w-1/3 sm:flex hidden overflow-y-scroll'>
             
                 <div className='lg:mx-8 md:mx-6 mx-6 my-4'>
                     <Link href="/">

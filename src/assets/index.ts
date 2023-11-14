@@ -75,8 +75,13 @@ import ReligionCategory from './categories/religion.svg'
 import Sports from './categories/sports.svg'
 import TechnologyCategory from './categories/technology.svg'
 
+import Mic from './yourpodcast/microphone.svg'
+import FMale from './yourpodcast/male1.jpg'
+import SMale from './yourpodcast/male2.jpg'
+import Female from './yourpodcast/female.jpg'
+
 const Assets = {
-    Star, Fs, PlayCircle, TopCategories, Down, Discover, Top50, Categories, AddPodcast, YourPlaylist, RecentlyPlayed, SH, WokpaPodcasters, WokpaAdvertisers, ReadBlog, Joe, MarcMaron, JoeR, Category, HDTGM, Comedy, HF, Love, Education, Religion, Music, Technology, GP, RatingStarColored, RatingStar, LeDownload, LeHam, LeLove, LePlus, LeShare, WokpaLogo, SLove, SHam, SPlus, User, Mobile, Search, Close, Menu, GoogleIcon, CloseIcon, Right, FacebookIcon, AppleIcon, EnvelopeIcon, DownIcon, HeartIcon, Player, QueueIcon, QueuePlayer, QueueHam, Arts, Business, ComedyCategory, EducationCategory, Govt, Health, Kids, LoveRomance, News, ReligionCategory, Sports, TechnologyCategory, Lennox, Gift
+    Star, Fs, PlayCircle, TopCategories, Down, Discover, Top50, Categories, AddPodcast, YourPlaylist, RecentlyPlayed, SH, WokpaPodcasters, WokpaAdvertisers, ReadBlog, Joe, MarcMaron, JoeR, Category, HDTGM, Comedy, HF, Love, Education, Religion, Music, Technology, GP, RatingStarColored, RatingStar, LeDownload, LeHam, LeLove, LePlus, LeShare, WokpaLogo, SLove, SHam, SPlus, User, Mobile, Search, Close, Menu, GoogleIcon, CloseIcon, Right, FacebookIcon, AppleIcon, EnvelopeIcon, DownIcon, HeartIcon, Player, QueueIcon, QueuePlayer, QueueHam, Arts, Business, ComedyCategory, EducationCategory, Govt, Health, Kids, LoveRomance, News, ReligionCategory, Sports, TechnologyCategory, Lennox, Gift, Mic, SMale, FMale, Female
 }
 
 export default Assets

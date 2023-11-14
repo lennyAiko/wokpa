@@ -5,12 +5,12 @@ import Link from "next/link"
 
 export default function Categories () {
     return (
-        <main className="bg-[#212121] flex-col w-screen h-screen">
+        <main className="bg-[#212121] flex-col w-screen h-fit">
             <div className="mx-20 my-5">
                 <SectionTitle name="Explore All Categories" />
             </div>
 
-            <div className="grid grid-cols-5 gap-10 w-[75%] mx-20">
+            <div className="grid grid-cols-5 gap-10 w-[75%] mx-20 mb-8">
                 {
                     CategoriesData.map(({id, img}) => (
                         <Link href={`/categories/${id}`} key={id}>

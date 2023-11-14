@@ -26,13 +26,13 @@ export const NavData = [
     {
         name: "Add your podcast",
         img: Assets.AddPodcast,
-        link: "/",
+        link: "/yourpodcast",
         id: 4
     },
     {
         name: "Your playlist",
         img: Assets.YourPlaylist,
-        link: "/",
+        link: "/yourplaylist",
         id: 5
     },
     {
@@ -1000,3 +1000,5 @@ export const CategoriesData = [
         img: Assets.TechnologyCategory,
     }
 ]
+
+export const PlaylistData = []

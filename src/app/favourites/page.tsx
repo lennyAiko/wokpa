@@ -37,7 +37,7 @@ export default function YourFavourites () {
                     <Image src={Assets.HeartIcon} alt="heart icon" className="w-6 h-6" />
                     <span className="text-white font-bold text-[28px] leading-5">Your favourite episodes</span>
                 </div>
-                <span className="ml-9 mt-2.5 text-white text-lg font-normal">{podcastCount} episodes</span> :
+                <span className="ml-9 mt-2.5 text-white text-lg font-normal">{podcastCount} episodes</span>
             </div>
 
             <div className='h-[1px] bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] my-3 w-full mt-4'></div>

@@ -27,7 +27,7 @@ export default function RootLayout({
         title={SEO_TITLE}
         description={SEO_DESCRIPTION}
       />
-      <body className={`${inter.className}`}>
+      <body className={`${inter.className} contents`}>
         
         <div className="sm:w-max sm:flex sm:flex-row w-full bg-[#303030] h-fit" role='main'>
           

@@ -36,7 +36,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:items-end">
               <SectionTitle name="Latest episodes" />
-              <span className="text-[#C3C3C3] font-medium sm:text-lg text-base flex sm:justify-normal justify-center -mt-4 -ml-10 sm:-mt-2">#Fresh out of the studio!</span>
+              <h3 className="text-[#C3C3C3] font-medium sm:text-lg text-base flex sm:justify-normal justify-center -mt-4 -ml-10 sm:-mt-2">#Fresh out of the studio!</h3>
             </div>
 
             <div className="flex items-center justify-center sm:justify-normal relative sm:mr-6 mr-8 mt-2 sm:mt-0">
@@ -68,8 +68,8 @@ export default function Home() {
         <div className="flex flex-col sm:w-1/3 bg-[#30303080] rounded-[3px] sm:h-[632px] h-[432px]">
 
           <div className="flex flex-col pt-5 px-5">
-            <span className="text-white font-bold sm:text-3xl text-xl">Made for you</span>
-            <span className="text-[#C3C3C3] font-medium sm:text-lg text-base">Episodes you don&lsquo;t want to miss out on.</span>
+            <h3 className="text-white font-bold sm:text-3xl text-xl">Made for you</h3>
+            <h5 className="text-[#C3C3C3] font-medium sm:text-lg text-base">Episodes you don&lsquo;t want to miss out on.</h5>
           </div>
 
           <div className='h-[1px] sm:h-[2px] bg-gradient-to-r from-[#D9D9D99C] to-[#D9D9D900] my-3 w-full'></div>
@@ -132,7 +132,7 @@ export default function Home() {
 
         <div className="flex flex-col items-start">
           <SectionTitle name="Podcast host suggestions" />
-          <span className="text-[#C3C3C3] font-medium sm:text-lg text-base sm:ml-16 justify-center sm:justify-normal ml-12 -mt-4">#Editor&lsquo;s choice</span>
+          <h3 className="text-[#C3C3C3] font-medium sm:text-lg text-base sm:ml-16 justify-center sm:justify-normal ml-12 -mt-4">#Editor&lsquo;s choice</h3>
         </div>
 
         <div className="flex sm:gap-3 gap-2 items-center sm:m-6 m-2.5 overflow-x-scroll overflow-hidden">
